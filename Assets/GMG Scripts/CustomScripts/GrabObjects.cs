@@ -4,17 +4,16 @@ using UnityEngine.InputSystem;
 
 public class GrabObjects : MonoBehaviour
 {
-    [SerializeField]
-    private Transform grabPoint;
-
-    [SerializeField]
-    private Transform rayPoint;
-
-    [SerializeField]
-    private float rayDistance = 2f;
+    [SerializeField] private Transform grabPoint;
+    [SerializeField] private Transform rayPoint;
+    [SerializeField] private float rayDistance = 2f;
 
     private GameObject grabbedObject;
     private int layerIndex;
+
+    public NoteUIManager noteUIManager;
+
+    private string acquiredKeyID = null;
 
     private void Start()
     {
@@ -25,20 +24,61 @@ public class GrabObjects : MonoBehaviour
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.right, rayDistance);
 
-        if (hitInfo.collider != null &&
-            hitInfo.collider.gameObject.layer == layerIndex &&
-            grabbedObject == null)
+        if (hitInfo.collider != null)
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            GameObject target = hitInfo.collider.gameObject;
+
+            // --- Pick up Keycard ---
+            if (target.layer == layerIndex && grabbedObject == null)
             {
-                grabbedObject = hitInfo.collider.gameObject;
-                grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                grabbedObject.transform.position = grabPoint.position;
-                grabbedObject.transform.SetParent(transform);
+                if (Keyboard.current.spaceKey.wasPressedThisFrame)
+                {
+                    // If it's a keycard
+                    Keycard keycard = target.GetComponent<Keycard>();
+                    if (keycard != null)
+                    {
+                        acquiredKeyID = keycard.doorID;
+                        Destroy(target);
+                        Debug.Log($"Picked up keycard for door ID: {acquiredKeyID}");
+                        return;
+                    }
+
+                    // If it's a normal grabbable object
+                    grabbedObject = target;
+                    grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                    grabbedObject.transform.position = grabPoint.position;
+                    grabbedObject.transform.SetParent(transform);
+
+                    // Show note UI if applicable
+                    Note note = grabbedObject.GetComponent<Note>();
+                    if (note != null)
+                    {
+                        noteUIManager.ShowNote(note.noteMessage);
+                    }
+                }
+            }
+
+            // --- Door Interaction ---
+            if (Keyboard.current.eKey.wasPressedThisFrame)
+            {
+                Door door = target.GetComponent<Door>();
+                if (door != null)
+                {
+                    if (door.doorID == acquiredKeyID)
+                    {
+                        Destroy(door.gameObject);
+                        Debug.Log($"Unlocked and destroyed door: {door.doorID}");
+                    }
+                    else
+                    {
+                        Debug.Log("You don't have the correct keycard for this door.");
+                    }
+                }
             }
         }
 
-        else if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject != null)
+        // --- Drop Logic ---
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject != null)
         {
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
             grabbedObject.transform.SetParent(null);
@@ -47,6 +87,12 @@ public class GrabObjects : MonoBehaviour
             Vector3 targetPosition = grabPoint.position + dropOffset;
 
             StartCoroutine(DropObjectSmoothly(grabbedObject, targetPosition));
+
+            // Hide note if dropped
+            if (grabbedObject.CompareTag("Note"))
+            {
+                noteUIManager.HideNote();
+            }
 
             grabbedObject = null;
         }
