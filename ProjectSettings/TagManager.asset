@@ -8,6 +8,7 @@ TagManager:
   - Object
   - Note
   - Door
+  - Keypad
   layers:
   - Default
   - TransparentFX

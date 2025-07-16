@@ -1,44 +1,41 @@
+using UnityEngine.InputSystem;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class Keypad : MonoBehaviour
 {
-    public TMP_Text codeDisplay;
     public string correctCode = "1234";
-    private string currentInput = "";
+    public string doorID = "LabDoor";
 
-    public void PressKey(string key)
-    {
-        if (currentInput.Length >= 10) return;
-        currentInput += key;
-        UpdateDisplay();
-    }
+    public KeypadUIManager keypadUIManager; // Drag in the shared KeypadUIManager
 
-    public void ClearInput()
-    {
-        currentInput = "";
-        UpdateDisplay();
-    }
+    private bool playerNearby = false;
 
-    public void SubmitCode()
+    void Update()
     {
-        if (currentInput == correctCode)
+        if (playerNearby && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            Debug.Log("Correct Code! Unlocking...");
-            // Add unlock logic here
+            keypadUIManager.Open(correctCode, doorID);
         }
-        else
-        {
-            Debug.Log("Wrong Code!");
-        }
-
-        ClearInput();
     }
 
-    void UpdateDisplay()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        codeDisplay.text = currentInput;
+        if (other.CompareTag("Player"))
+        {
+            playerNearby = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerNearby = false;
+        }
+    }
+
+    public void ShowKeypadUI()
+    {
+        FindObjectOfType<KeypadUIManager>().Open(correctCode, doorID);
     }
 }
-
