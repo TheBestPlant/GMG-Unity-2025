@@ -1,35 +1,30 @@
-Unity Editor version:    6000.0.52f1 (9e4086222921)
-Branch:                  6000.0/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 15.5 (Build 24F74)
-Darwin version:          24.5.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        8192 MB
 Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.52f1 (9e4086222921) revision 10371206'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 7919 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-07-16T20:57:16Z
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\6000.0.52f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-/Users/ellie/Documents/GitHub/DerangedDrawings
+C:/Users/savan/Documents/GitHub/DerangedDrawings
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51634
+50054
 -job-worker-count
 3
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: /Users/ellie/Documents/GitHub/DerangedDrawings
-/Users/ellie/Documents/GitHub/DerangedDrawings
+Successfully changed project path to: C:/Users/savan/Documents/GitHub/DerangedDrawings
+C:/Users/savan/Documents/GitHub/DerangedDrawings
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -65,12 +60,12 @@ Successfully changed project path to: /Users/ellie/Documents/GitHub/DerangedDraw
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8824495872]  Target information:
+Player connection [31312]  Target information:
 
-Player connection [8824495872]  * "[IP] 10.203.91.91 [Port] 0 [Flags] 2 [Guid] 1058542731 [EditorId] 1058542731 [Version] 1048832 [Id] OSXEditor(0,FoxBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [31312]  * "[IP] 10.175.109.149 [Port] 0 [Flags] 2 [Guid] 304547820 [EditorId] 304547820 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G1NVG9O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8824495872] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8824495872] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [31312] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [31312] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,61 +77,62 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 127.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.52f1 (9e4086222921)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/ellie/Documents/GitHub/DerangedDrawings/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/savan/Documents/GitHub/DerangedDrawings/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
- preferred device: Apple M2 (high power)
-Metal devices available: 1
-0: Apple M2 (high power)
-Using device Apple M2 (high power)
-Initializing Metal device caps: Apple M2
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Vendor:   Intel
+    VRAM:     3959 MB
+    Driver:   27.20.100.8854
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56281
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/6000.0.52f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.002549 seconds.
-- Loaded All Assemblies, in  0.320 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.52f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.073549 seconds.
+- Loaded All Assemblies, in  4.417 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 83 ms
-Native extension for OSXStandalone target not found
+Android Extension - Scanning For ADB Devices 1591 ms
+Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.358 seconds
-Domain Reload Profiling: 678ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  4.316 seconds
+Domain Reload Profiling: 8678ms
+	BeginReloadAssembly (1824ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (134ms)
-		LoadAssemblies (110ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (414ms)
+	RebuildNativeTypeToScriptingClass (112ms)
+	initialDomainReloadingComplete (534ms)
+	LoadAllAssembliesAndSetupDomain (1476ms)
+		LoadAssemblies (1793ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (131ms)
-			TypeCache.Refresh (129ms)
-				TypeCache.ScanAssembly (114ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (358ms)
+		AnalyzeDomain (1434ms)
+			TypeCache.Refresh (1427ms)
+				TypeCache.ScanAssembly (1327ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (4318ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (4010ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (142ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (85ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			InitializePlatformSupportModulesInManaged (2242ms)
+			SetLoadedEditorAssemblies (24ms)
+			BeforeProcessingInitializeOnLoad (383ms)
+			ProcessInitializeOnLoadAttributes (872ms)
+			ProcessInitializeOnLoadMethodAttributes (490ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -148,58 +144,69 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.458 seconds
+- Loaded All Assemblies, in  3.930 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.49 ms, found 3 plugins.
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
+Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.435 seconds
-Domain Reload Profiling: 892ms
-	BeginReloadAssembly (102ms)
+- Finished resetting the current domain, in  2.687 seconds
+Domain Reload Profiling: 6575ms
+	BeginReloadAssembly (1167ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (40ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (297ms)
-		LoadAssemblies (207ms)
+		CreateAndSetChildDomain (133ms)
+	RebuildCommonClasses (228ms)
+	RebuildNativeTypeToScriptingClass (108ms)
+	initialDomainReloadingComplete (228ms)
+	LoadAllAssembliesAndSetupDomain (2156ms)
+		LoadAssemblies (1942ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (105ms)
-				TypeCache.ScanAssembly (91ms)
-			BuildScriptInfoCaches (16ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (435ms)
+		AnalyzeDomain (969ms)
+			TypeCache.Refresh (792ms)
+				TypeCache.ScanAssembly (718ms)
+			BuildScriptInfoCaches (136ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (2689ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (345ms)
+		SetupLoadedEditorAssemblies (2096ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (233ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (64ms)
+			SetLoadedEditorAssemblies (16ms)
+			BeforeProcessingInitializeOnLoad (436ms)
+			ProcessInitializeOnLoadAttributes (1274ms)
+			ProcessInitializeOnLoadMethodAttributes (273ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Launching external process: /Applications/Unity/Hub/Editor/6000.0.52f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (28ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 10.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3078 unused Assets / (0.9 MB). Loaded Objects now: 3587.
-Memory consumption went from 99.5 MB to 98.5 MB.
-Total: 5.844042 ms (FindLiveObjects: 0.462916 ms CreateObjectMapping: 0.223750 ms MarkObjects: 4.402959 ms  DeleteObjects: 0.753834 ms)
+Unloading 3078 unused Assets / (1.1 MB). Loaded Objects now: 3588.
+Memory consumption went from 87.5 MB to 86.4 MB.
+Total: 20.142900 ms (FindLiveObjects: 0.797000 ms CreateObjectMapping: 0.890800 ms MarkObjects: 15.634300 ms  DeleteObjects: 2.818000 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 105345.001478 seconds.
+  path: Assets/Art/Tilesets/TilesetArt/TileMapsflooring_0.asset
+  artifactKey: Guid(a8094b804d50468479d36bedff0b3561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tilesets/TilesetArt/TileMapsflooring_0.asset using Guid(a8094b804d50468479d36bedff0b3561) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cfa8f83abe2389d07ef9dc5b2e8cbb0') in 0.4680081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
