@@ -14,6 +14,7 @@ public class GrabObjects : MonoBehaviour
     public NoteUIManager noteUIManager;
 
     private string acquiredKeyID = null;
+    private bool justPickedUp = false;
 
     private void Start()
     {
@@ -22,18 +23,20 @@ public class GrabObjects : MonoBehaviour
 
     void Update()
     {
+        justPickedUp = false; // Reset every frame
+
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.right, rayDistance);
 
         if (hitInfo.collider != null)
         {
             GameObject target = hitInfo.collider.gameObject;
 
-            // --- Pick up Keycard ---
+            // --- Pick up Keycard or Grabbable Object ---
             if (target.layer == layerIndex && grabbedObject == null)
             {
                 if (Keyboard.current.spaceKey.wasPressedThisFrame)
                 {
-                    // If it's a keycard
+                    // Keycard logic
                     Keycard keycard = target.GetComponent<Keycard>();
                     if (keycard != null)
                     {
@@ -43,18 +46,20 @@ public class GrabObjects : MonoBehaviour
                         return;
                     }
 
-                    // If it's a normal grabbable object
+                    // Normal grabbable object logic
                     grabbedObject = target;
                     grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
                     grabbedObject.transform.position = grabPoint.position;
                     grabbedObject.transform.SetParent(transform);
 
-                    // Show note UI if applicable
+                    // Show note if it's a note
                     Note note = grabbedObject.GetComponent<Note>();
                     if (note != null)
                     {
                         noteUIManager.ShowNote(note.noteMessage);
                     }
+
+                    justPickedUp = true;
                 }
             }
 
@@ -78,7 +83,7 @@ public class GrabObjects : MonoBehaviour
         }
 
         // --- Drop Logic ---
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject != null)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject != null && !justPickedUp)
         {
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
             grabbedObject.transform.SetParent(null);
@@ -88,7 +93,7 @@ public class GrabObjects : MonoBehaviour
 
             StartCoroutine(DropObjectSmoothly(grabbedObject, targetPosition));
 
-            // Hide note if dropped
+            // Hide note if it was a note
             if (grabbedObject.CompareTag("Note"))
             {
                 noteUIManager.HideNote();
