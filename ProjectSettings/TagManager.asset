@@ -9,6 +9,8 @@ TagManager:
   - Note
   - Door
   - Keypad
+  - Enemy
+  - RefillStation
   layers:
   - Default
   - TransparentFX
