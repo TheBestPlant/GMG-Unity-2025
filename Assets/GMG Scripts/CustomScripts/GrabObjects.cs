@@ -12,6 +12,7 @@ public class GrabObjects : MonoBehaviour
     private int layerIndex;
 
     public NoteUIManager noteUIManager;
+    public WaterThrower waterThrower; // Assign in Inspector
 
     private string acquiredKeyID = null;
     private bool justPickedUp = false;
@@ -43,6 +44,18 @@ public class GrabObjects : MonoBehaviour
                         acquiredKeyID = keycard.doorID;
                         Destroy(target);
                         Debug.Log($"Picked up keycard for door ID: {acquiredKeyID}");
+                        return;
+                    }
+
+                    // Lighter logic
+                    if (target.CompareTag("Lighter"))
+                    {
+                        if (waterThrower != null)
+                        {
+                            waterThrower.GiveLighter(); // Grant fire ability
+                        }
+                        Destroy(target); // Remove lighter from scene
+                        Debug.Log("Picked up lighter.");
                         return;
                     }
 

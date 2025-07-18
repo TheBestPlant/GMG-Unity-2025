@@ -12,6 +12,12 @@ public class WaterThrower : MonoBehaviour
     private float lastThrowTime;
     public float throwCooldown = 0.5f;
 
+    public GameObject flamePrefab;        // Assign the flame prefab in Inspector
+    public Vector2 flameOffset = new Vector2(1f, 0); // Offset to position flame next to player
+
+    private bool hasLighter = false;     // Whether the player has picked up the lighter
+    private GameObject activeFlame;      // Keep track of active flame
+
     [SerializeField] private Transform rayPoint;
     [SerializeField] private float rayDistance = 2f;
 
@@ -26,7 +32,7 @@ public class WaterThrower : MonoBehaviour
     {
         UpdateFacingDirection();
 
-        // Cast ray to check refill station presence
+        // Refill station detection
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, facingDirection, rayDistance);
         if (hitInfo.collider != null && hitInfo.collider.CompareTag("RefillStation"))
         {
@@ -39,10 +45,20 @@ public class WaterThrower : MonoBehaviour
             Debug.DrawRay(rayPoint.position, facingDirection * rayDistance, Color.red);
         }
 
+        // Shift = Throw water or place flame
         if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= lastThrowTime + throwCooldown)
         {
-            TryThrowWater();
+            if (hasLighter)
+            {
+                ToggleFlame();
+            }
+            else
+            {
+                TryThrowWater();
+            }
         }
+
+        // Refill
         else if (Input.GetKeyDown(KeyCode.F))
         {
             if (canRefill)
@@ -84,5 +100,36 @@ public class WaterThrower : MonoBehaviour
     {
         currentWater = maxWater;
         Debug.Log("Water refilled!");
+    }
+
+    void ToggleFlame()
+    {
+        if (activeFlame == null)
+        {
+            Vector3 spawnPos = transform.position + (Vector3)(facingDirection.normalized * flameOffset.magnitude);
+            activeFlame = Instantiate(flamePrefab, spawnPos, Quaternion.identity);
+        }
+        else
+        {
+            Destroy(activeFlame);
+            activeFlame = null;
+        }
+
+        lastThrowTime = Time.time;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Lighter"))
+        {
+            GiveLighter();
+            Destroy(other.gameObject); // Remove the lighter from the scene
+        }
+    }
+
+    public void GiveLighter()
+    {
+        hasLighter = true;
+        Debug.Log("Picked up a lighter! You can now use fire instead of water.");
     }
 }

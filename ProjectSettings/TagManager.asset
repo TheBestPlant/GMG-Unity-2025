@@ -11,6 +11,7 @@ TagManager:
   - Keypad
   - Enemy
   - RefillStation
+  - Lighter
   layers:
   - Default
   - TransparentFX
