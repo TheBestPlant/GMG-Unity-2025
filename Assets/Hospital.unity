@@ -519,7 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2515,181 +2515,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3369495386293648138, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: codeDisplay
-      value: 
-      objectReference: {fileID: 2046489888}
-    - target: {fileID: 3369495386293648138, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: keypadPanel
-      value: 
-      objectReference: {fileID: 1376296226}
-    - target: {fileID: 3504390902901315250, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 3504390902901315250, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504390902901315250, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3587795608115008989, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 3587795608115008989, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 3587795608115008989, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3890604745383149303, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 3890604745383149303, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 3890604745383149303, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797788999258742553, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_text
-      value: Clear
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797788999258742553, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797788999258742553, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578276767892149172, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 6578276767892149172, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578276767892149172, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6629881453229500718, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 6629881453229500718, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 6629881453229500718, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6654395817252113074, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 6654395817252113074, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 6654395817252113074, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6783599479893106854, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_text
-      value: Enter
-      objectReference: {fileID: 0}
-    - target: {fileID: 6783599479893106854, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6783599479893106854, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7216274638070482166, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 7216274638070482166, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 7216274638070482166, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7344285284665099330, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_Name
       value: Keypad Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394460972745077383, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 7394460972745077383, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394460972745077383, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810954718412045063, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810954718412045063, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 7810954718412045063, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Submit
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810954718412045063, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810954718412045063, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Enter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8352680874770337963, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: targetDoorID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382411703567496930, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382411703567496930, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 8382411703567496930, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ClearInput
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382411703567496930, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382411703567496930, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Clear
       objectReference: {fileID: 0}
     - target: {fileID: 8988065250459139374, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2730,30 +2558,6 @@ PrefabInstance:
     - target: {fileID: 8988065250459139374, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9144735458407938202, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 9144735458407938202, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 9144735458407938202, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166571382778161650, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 342031893}
-    - target: {fileID: 9166571382778161650, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166571382778161650, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: KeypadUIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51111,11 +50915,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05b639bcbf2959c41b11f20ffcfb1d57, type: 3}
---- !u!1 &1376296226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5409168470609779651, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-  m_PrefabInstance: {fileID: 1192019120}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1410479237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67642,17 +67441,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5776497370562703346, guid: 05b639bcbf2959c41b11f20ffcfb1d57, type: 3}
   m_PrefabInstance: {fileID: 1352296110}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2046489888 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
-  m_PrefabInstance: {fileID: 1192019120}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2084515544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5776497370562703346, guid: 05b639bcbf2959c41b11f20ffcfb1d57, type: 3}

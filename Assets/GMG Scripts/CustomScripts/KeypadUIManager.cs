@@ -5,6 +5,7 @@ public class KeypadUIManager : MonoBehaviour
 {
     public GameObject keypadPanel;        // The whole keypad UI panel
     public TMP_Text codeDisplay;
+    public GameObject keypadDisplay;
 
     private string currentInput = "";
     private string correctCode = "";
@@ -19,6 +20,7 @@ public class KeypadUIManager : MonoBehaviour
         {
             codeDisplay.gameObject.SetActive(false);
             keypadPanel.gameObject.SetActive(false);
+            keypadDisplay.gameObject.SetActive(false);
         }
     }
 
@@ -35,6 +37,7 @@ public class KeypadUIManager : MonoBehaviour
         {
             codeDisplay.gameObject.SetActive(true); // Show display when keypad opens
             keypadPanel.gameObject.SetActive(true);
+            keypadDisplay.gameObject.SetActive(true);
         }
 
         UpdateDisplay();
@@ -50,6 +53,7 @@ public class KeypadUIManager : MonoBehaviour
         {
             codeDisplay.gameObject.SetActive(false); // Hide display when keypad closes
             keypadPanel.gameObject.SetActive(false);
+            keypadDisplay.gameObject.SetActive(false);
         }
     }
 
@@ -96,4 +100,10 @@ public class KeypadUIManager : MonoBehaviour
     {
         codeDisplay.text = currentInput;
     }
+
+    public void TestClick()
+    {
+        Debug.Log("Button clicked!");
+    }
+
 }
