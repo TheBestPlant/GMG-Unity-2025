@@ -13,6 +13,7 @@ public class KeypadUIManager : MonoBehaviour
     public AudioClip clearSound;
     public AudioClip correctSound;
     public AudioClip incorrectSound;
+    public AudioClip doorDestroySound;
 
     private string currentInput = "";
     private string correctCode = "";
@@ -98,6 +99,10 @@ public class KeypadUIManager : MonoBehaviour
                 if (door.doorID == targetDoorID)
                 {
                     Destroy(door.gameObject);
+                    if (audioSource != null && doorDestroySound != null)
+                    {
+                        audioSource.PlayOneShot(doorDestroySound);
+                    }
                     break;
                 }
             }

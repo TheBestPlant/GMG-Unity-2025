@@ -14,6 +14,15 @@ public class GrabObjects : MonoBehaviour
     public NoteUIManager noteUIManager;
     public WaterThrower waterThrower; // Assign in Inspector
 
+    public AudioSource audioSource;
+    public AudioClip keycardPickupSound;
+    public AudioClip lighterPickupSound;
+    public AudioClip notePickupSound;
+    public AudioClip pickupSound;
+    public AudioClip doorDestroySound;
+    public AudioClip dropSound;
+    public AudioClip noteDropSound;
+
     private string acquiredKeyID = null;
     private bool justPickedUp = false;
 
@@ -44,6 +53,10 @@ public class GrabObjects : MonoBehaviour
                         acquiredKeyID = keycard.doorID;
                         Destroy(target);
                         Debug.Log($"Picked up keycard for door ID: {acquiredKeyID}");
+                        if (audioSource != null && keycardPickupSound != null)
+                        {
+                            audioSource.PlayOneShot(keycardPickupSound);
+                        }
                         return;
                     }
 
@@ -56,6 +69,10 @@ public class GrabObjects : MonoBehaviour
                         }
                         Destroy(target); // Remove lighter from scene
                         Debug.Log("Picked up lighter.");
+                        if (audioSource != null && lighterPickupSound != null)
+                        {
+                            audioSource.PlayOneShot(lighterPickupSound);
+                        }
                         return;
                     }
 
@@ -70,9 +87,20 @@ public class GrabObjects : MonoBehaviour
                     if (note != null)
                     {
                         noteUIManager.ShowNote(note.noteMessage);
+                        if (audioSource != null && notePickupSound != null)
+                        {
+                            audioSource.PlayOneShot(notePickupSound);
+                        }
+                    }
+                    else
+                    {
+                        if (audioSource != null && pickupSound != null)
+                        {
+                            audioSource.PlayOneShot(pickupSound);
+                        }
                     }
 
-                    justPickedUp = true;
+                        justPickedUp = true;
                 }
             }
 
@@ -86,6 +114,10 @@ public class GrabObjects : MonoBehaviour
                     {
                         Destroy(door.gameObject);
                         Debug.Log($"Unlocked and destroyed door: {door.doorID}");
+                        if (audioSource != null && doorDestroySound != null)
+                        {
+                            audioSource.PlayOneShot(doorDestroySound);
+                        }
                     }
                     else
                     {
@@ -110,9 +142,21 @@ public class GrabObjects : MonoBehaviour
             if (grabbedObject.CompareTag("Note"))
             {
                 noteUIManager.HideNote();
+                if (audioSource != null && noteDropSound != null)
+                {
+                    audioSource.PlayOneShot(noteDropSound);
+                }
+            }
+            else
+            {
+                if (audioSource != null && dropSound != null)
+                {
+                    audioSource.PlayOneShot(dropSound);
+                }
             }
 
-            grabbedObject = null;
+
+                grabbedObject = null;
         }
 
         Debug.DrawRay(rayPoint.position, transform.right * rayDistance, Color.red);
