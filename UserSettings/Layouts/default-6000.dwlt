@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1049.1992
-    y: 326.41797
+    x: 1049
+    y: 313
     width: 360
     height: 578
   m_ShowMode: 0
@@ -377,8 +377,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Sprite Editor\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1049
-    y: 326
+    x: 0
+    y: 26
     width: 360
     height: 552
   m_SerializedDataModeController:
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Zoom: 0.2015625
   m_ScrollPosition: {x: 0, y: 0}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: 0763c554c2c282190800000000000000
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
   m_LastUsedModuleTypeName: UnityEditor.U2D.Sprites.SpriteFrameModule
 --- !u!114 &16
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 101
+    y: 24
     width: 344.5
     height: 392
   m_SerializedDataModeController:
@@ -565,9 +565,9 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 189}
-      m_SelectedIDs: 46870000
-      m_LastClickedID: 34630
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 9cf4ffff02f7ffff0cfbffff0e8800003e880000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -614,8 +614,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 345.5
-    y: 101
+    x: 346.5
+    y: 24
     width: 662
     height: 392
   m_SerializedDataModeController:
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -12.129321, y: -19.484865, z: 0.008796296}
+    m_Target: {x: -2.3019745, y: -0.458714, z: -0.35363024}
     speed: 2
     m_Value: {x: -12.129321, y: -19.484865, z: 0.008796296}
   m_RenderMode: 0
@@ -1224,7 +1224,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.120539
+    m_Target: 41.175518
     speed: 2
     m_Value: 9.120539
   m_Ortho:
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 519
+    y: 442
     width: 1008.5
     height: 317
   m_SerializedDataModeController:
@@ -1427,7 +1427,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5c8a0000
     m_LastClickedID: 35420
-    m_ExpandedIDs: 00000000d28500006a86000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000003c8a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1456,7 +1456,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2850000
+    m_ExpandedIDs: 000000003c8a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1571,8 +1571,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1009.5
-    y: 101
+    x: 1010.5
+    y: 24
     width: 459.5
     height: 735
   m_SerializedDataModeController:
