@@ -13,6 +13,11 @@ public class MonsterPatrolChase : MonoBehaviour
     public float detectionRange = 5f;
     public float fieldOfViewAngle = 120f; // Angle in degrees to detect player in front
 
+    public AudioSource audioSource;
+    public AudioClip monsterChaseSound;
+    public AudioClip returnToPatrolSound;
+    public AudioClip monsterIdleSound;
+
     private Vector3 currentTarget;
     private Rigidbody2D rb;
     private bool chasing = false;

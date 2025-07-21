@@ -15,6 +15,11 @@ public class WaterThrower : MonoBehaviour
     public GameObject flamePrefab;        // Assign the flame prefab in Inspector
     public Vector2 flameOffset = new Vector2(1f, 0); // Offset to position flame next to player
 
+    public AudioSource audioSource;
+    public AudioClip waterThrowSound;
+    public AudioClip waterRefillSound;
+    public AudioClip fireSound;
+
     private bool hasLighter = false;     // Whether the player has picked up the lighter
     private GameObject activeFlame;      // Keep track of active flame
 
@@ -51,6 +56,11 @@ public class WaterThrower : MonoBehaviour
             if (hasLighter)
             {
                 ToggleFlame();
+                if (audioSource != null && fireSound != null)
+                {
+                    audioSource.PlayOneShot(fireSound);
+                }
+                return;
             }
             else
             {
@@ -64,6 +74,11 @@ public class WaterThrower : MonoBehaviour
             if (canRefill)
             {
                 RefillWater();
+                if (audioSource != null && waterRefillSound != null)
+                {
+                    audioSource.PlayOneShot(waterRefillSound);
+                }
+                return;
             }
             else
             {
@@ -89,6 +104,11 @@ public class WaterThrower : MonoBehaviour
             water.GetComponent<WaterProjectile>().SetDirection(facingDirection);
             currentWater--;
             lastThrowTime = Time.time;
+            if (audioSource != null && waterThrowSound != null)
+            {
+                audioSource.PlayOneShot(waterThrowSound);
+            }
+            return;
         }
         else
         {
