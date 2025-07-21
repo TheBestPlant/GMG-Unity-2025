@@ -3,19 +3,24 @@ using TMPro;
 
 public class KeypadUIManager : MonoBehaviour
 {
-    public GameObject keypadPanel;        // The whole keypad UI panel
+    public GameObject keypadPanel;
     public TMP_Text codeDisplay;
     public GameObject keypadDisplay;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip digitSound;
+    public AudioClip clearSound;
+    public AudioClip correctSound;
+    public AudioClip incorrectSound;
 
     private string currentInput = "";
     private string correctCode = "";
     private string targetDoorID = "";
-
     private bool isOpen = false;
 
     void Start()
     {
-        // Hide the code display at the start of the game
         if (codeDisplay != null)
         {
             codeDisplay.gameObject.SetActive(false);
@@ -35,8 +40,7 @@ public class KeypadUIManager : MonoBehaviour
 
         if (codeDisplay != null)
         {
-            codeDisplay.gameObject.SetActive(true); // Show display when keypad opens
-            keypadPanel.gameObject.SetActive(true);
+            codeDisplay.gameObject.SetActive(true);
             keypadDisplay.gameObject.SetActive(true);
         }
 
@@ -51,8 +55,7 @@ public class KeypadUIManager : MonoBehaviour
 
         if (codeDisplay != null)
         {
-            codeDisplay.gameObject.SetActive(false); // Hide display when keypad closes
-            keypadPanel.gameObject.SetActive(false);
+            codeDisplay.gameObject.SetActive(false);
             keypadDisplay.gameObject.SetActive(false);
         }
     }
@@ -63,17 +66,29 @@ public class KeypadUIManager : MonoBehaviour
 
         currentInput += digit;
         UpdateDisplay();
+
+        if (audioSource != null && digitSound != null)
+        {
+            audioSource.PlayOneShot(digitSound);
+        }
     }
 
     public void ClearInput()
     {
         currentInput = "";
         UpdateDisplay();
+
+        if (audioSource != null && clearSound != null)
+        {
+            audioSource.PlayOneShot(clearSound);
+        }
     }
 
     public void Submit()
     {
-        if (currentInput == correctCode)
+        bool correct = currentInput == correctCode;
+
+        if (correct)
         {
             Debug.Log("Correct code entered for door: " + targetDoorID);
 
@@ -87,11 +102,22 @@ public class KeypadUIManager : MonoBehaviour
                 }
             }
 
+            if (audioSource != null && correctSound != null)
+            {
+                audioSource.PlayOneShot(correctSound);
+            }
+
             Close();
         }
         else
         {
             Debug.Log("Incorrect code.");
+
+            if (audioSource != null && incorrectSound != null)
+            {
+                audioSource.PlayOneShot(incorrectSound);
+            }
+
             ClearInput();
         }
     }
@@ -105,5 +131,5 @@ public class KeypadUIManager : MonoBehaviour
     {
         Debug.Log("Button clicked!");
     }
-
 }
+
