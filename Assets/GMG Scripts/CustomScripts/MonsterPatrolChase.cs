@@ -73,20 +73,16 @@ public class MonsterPatrolChase : MonoBehaviour
         float step = patrolSpeed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, currentTarget, step);
 
-        // Switch target if close enough (e.g., within 0.1f units)
+        // Switch target if close enough
         if (Vector2.Distance(transform.position, currentTarget) < 0.1f)
         {
-            if (currentTarget == pointB.position)
-                currentTarget = pointA.position;
-            else
-                currentTarget = pointB.position;
+            currentTarget = (currentTarget == pointB.position) ? pointA.position : pointB.position;
         }
 
-        // Flip sprite to face movement direction
-        if (currentTarget.x > transform.position.x)
-            transform.localScale = new Vector3(1, 1, 1);
-        else
-            transform.localScale = new Vector3(-1, 1, 1);
+        // Flip sprite to face movement direction (preserve scale)
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (currentTarget.x > transform.position.x ? 1 : -1);
+        transform.localScale = scale;
     }
 
     private void ChasePlayer()
@@ -94,10 +90,10 @@ public class MonsterPatrolChase : MonoBehaviour
         float step = chaseSpeed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, player.position, step);
 
-        // Flip sprite to face player
-        if (player.position.x > transform.position.x)
-            transform.localScale = new Vector3(1, 1, 1);
-        else
-            transform.localScale = new Vector3(-1, 1, 1);
+        // Flip sprite to face player (preserve scale)
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (player.position.x > transform.position.x ? 1 : -1);
+        transform.localScale = scale;
     }
+
 }
