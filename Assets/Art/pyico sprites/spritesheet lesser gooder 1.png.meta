@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: bbc4fc082f8fa4758b8cd2491d5c8371
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1472409279316692947
+    second: spritesheet lesser gooder 1_0
+  - first:
+      213: 9222767020191760885
+    second: spritesheet lesser gooder 1_1
+  - first:
+      213: 3773437110067568117
+    second: spritesheet lesser gooder 1_2
+  - first:
+      213: -9080320689941078443
+    second: spritesheet lesser gooder 1_3
+  - first:
+      213: -1838110095589143204
+    second: spritesheet lesser gooder 1_4
+  - first:
+      213: 7291810745232607155
+    second: spritesheet lesser gooder 1_5
+  - first:
+      213: -7987085370487720336
+    second: spritesheet lesser gooder 1_6
+  - first:
+      213: 2323833995672091081
+    second: spritesheet lesser gooder 1_7
+  - first:
+      213: -88192287176536190
+    second: spritesheet lesser gooder 1_8
+  - first:
+      213: -2401235550288951386
+    second: spritesheet lesser gooder 1_9
+  - first:
+      213: 7841095644005882730
+    second: spritesheet lesser gooder 1_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1071
+        width: 466
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20f656cf83f09be0800000000000000
+      internalID: -1472409279316692947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1295
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1c7b49db9ddff70800000000000000
+      internalID: 9222767020191760885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1279
+        width: 114
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd9adf1f01fd5430800000000000000
+      internalID: 3773437110067568117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_3
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1071
+        width: 466
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e9e6d21783cf180800000000000000
+      internalID: -9080320689941078443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_4
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1295
+        width: 146
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d89565b98bd76e0800000000000000
+      internalID: -1838110095589143204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_5
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1279
+        width: 114
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b747f63d37b13560800000000000000
+      internalID: 7291810745232607155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_6
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 543
+        width: 515
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0763c554c2c282190800000000000000
+      internalID: -7987085370487720336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 607
+        width: 386
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f205f4baef3020800000000000000
+      internalID: 2323833995672091081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 607
+        width: 386
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fc9e2059da6cef0800000000000000
+      internalID: -88192287176536190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 322
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7ccf24df81daed0800000000000000
+      internalID: -2401235550288951386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet lesser gooder 1_10
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 47
+        width: 322
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b55deb1fa21dc60800000000000000
+      internalID: 7841095644005882730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 71355cdeb60c6484cba7eca9ec4c5186
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spritesheet lesser gooder 1_0: -1472409279316692947
+      spritesheet lesser gooder 1_1: 9222767020191760885
+      spritesheet lesser gooder 1_10: 7841095644005882730
+      spritesheet lesser gooder 1_2: 3773437110067568117
+      spritesheet lesser gooder 1_3: -9080320689941078443
+      spritesheet lesser gooder 1_4: -1838110095589143204
+      spritesheet lesser gooder 1_5: 7291810745232607155
+      spritesheet lesser gooder 1_6: -7987085370487720336
+      spritesheet lesser gooder 1_7: 2323833995672091081
+      spritesheet lesser gooder 1_8: -88192287176536190
+      spritesheet lesser gooder 1_9: -2401235550288951386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
