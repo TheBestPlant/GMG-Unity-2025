@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 1470
     height: 817
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 345.5
     height: 418
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -422,10 +422,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_ShowAlpha: 0
   m_MipLevel: 0
-  m_Zoom: 0.10078125
+  m_Zoom: 9.675
   m_ScrollPosition: {x: 0, y: 0}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: a7fcc6c2c849f6c90800000000000000
+  m_SelectedSpriteRectGUID: efe647f11e45023b0800000000000000
   m_LastUsedModuleTypeName: UnityEditor.U2D.Sprites.SpriteFrameModule
 --- !u!114 &16
 MonoBehaviour:
@@ -565,10 +565,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 253}
-      m_SelectedIDs: ae7e0000
-      m_LastClickedID: 32430
-      m_ExpandedIDs: 3afafffffafaffffbc7f0000ec7f0000
+      scrollPos: {x: 0, y: 173}
+      m_SelectedIDs: b87e0000
+      m_LastClickedID: 32440
+      m_ExpandedIDs: 9cf8fffffafaffffdc7f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1172,9 +1172,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -38.530746, y: 19.042702, z: -0.050489042}
+    m_Target: {x: 5.145467, y: -15.882193, z: -0.10551912}
     speed: 2
-    m_Value: {x: -38.530746, y: 19.042702, z: -0.050489042}
+    m_Value: {x: 5.145467, y: -15.882193, z: -0.10551912}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1224,9 +1224,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.952987
+    m_Target: 19.103664
     speed: 2
-    m_Value: 14.952987
+    m_Value: 19.103664
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1408,7 +1408,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Art/pyico sprites
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1418,16 +1418,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets
+  - Assets/Art/pyico sprites
   m_LastFoldersGridSize: 71
-  m_LastProjectPath: /Users/emmajhun/Documents/GitHub/GMG-Unity-2025/2025 GMG game
+  m_LastProjectPath: /Users/ellie/Documents/GitHub/DerangedDrawings
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a890000
-    m_LastClickedID: 35226
-    m_ExpandedIDs: 000000009a890000208a000000ca9a3bffffff7f
+    m_SelectedIDs: e69f0000
+    m_LastClickedID: 40934
+    m_ExpandedIDs: 00000000d88900004e8a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1456,7 +1456,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a890000
+    m_ExpandedIDs: 00000000d8890000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 192
+    m_CachedPref: -192
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
