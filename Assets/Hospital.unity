@@ -2515,9 +2515,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2407888479990858356, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407888479990858356, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885880807893925784, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816835346372449372, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 3677565747
+      objectReference: {fileID: 0}
     - target: {fileID: 7344285284665099330, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_Name
       value: Keypad Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707100103108008925, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707100103108008925, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707100103108008925, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8988065250459139374, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2558,6 +2602,18 @@ PrefabInstance:
     - target: {fileID: 8988065250459139374, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166795240930110393, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166795240930110393, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166795240930110393, guid: e70bcbf8bb34ef14ebe2434a90d1869d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67572,8 +67628,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f1017761d1ee8f45a43393bc3b98284, type: 2}
+  m_sharedMaterial: {fileID: 462885750447389956, guid: 9f1017761d1ee8f45a43393bc3b98284, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
