@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 0}
+  - {fileID: 740161737}
   useCustomActions: 0
   customActions:
     m_PersistentCalls:
@@ -2262,7 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b6d0125816b47ef98ecc18e31894a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToMove: {fileID: 0}
+  objectToMove: {fileID: 394257325}
   newPosition: {x: 0, y: 0}
   stopMovements: 1
 --- !u!1001 &504779788
@@ -53681,10 +53681,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4705452662676270780, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 503280344}
+      addedObject: {fileID: 503280343}
     - targetCorrespondingSourceObject: {fileID: 4705452662676270780, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 503280343}
+      addedObject: {fileID: 503280344}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
 --- !u!1 &1309537116
 GameObject:
