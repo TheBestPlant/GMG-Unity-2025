@@ -538,7 +538,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Art/Tilesets
+    - Assets/Art/pyico sprites
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -548,15 +548,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Art/Tilesets
+  - Assets/Art/pyico sprites
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/emmajhun/Documents/GitHub/GMG-Unity-2025/2025 GMG game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 83.99963}
-    m_SelectedIDs: f08b0000
-    m_LastClickedID: 35824
+    m_SelectedIDs: f88b0000
+    m_LastClickedID: 35832
     m_ExpandedIDs: 00000000208b0000b28b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -614,8 +614,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300005485000060850000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300005485000060850000e0870000ee820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 2507}
+    m_ScrollPosition: {x: 0, y: 56.999573}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -731,10 +731,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 06fbffff
+      scrollPos: {x: 0, y: 273}
+      m_SelectedIDs: d87e0000
+      m_LastClickedID: 32472
+      m_ExpandedIDs: 0cfbffff3680000076800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1338,9 +1338,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -38.46297, y: 28.886341, z: 0.037717998}
+    m_Target: {x: -36.129402, y: 27.021652, z: 0}
     speed: 2
-    m_Value: {x: -38.46297, y: 28.886341, z: 0.037717998}
+    m_Value: {x: -36.1294, y: 27.021652, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1390,9 +1390,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.1244936
+    m_Target: 6.9752107
     speed: 2
-    m_Value: 6.1244936
+    m_Value: 6.9752107
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1450,7 +1450,7 @@ MonoBehaviour:
     x: 277.5
     y: 101
     width: 843
-    height: 425
+    height: 388
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 843, y: 404}
+  m_TargetSize: {x: 843, y: 367}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1485,8 +1485,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -210.75
     m_HBaseRangeMax: 210.75
-    m_VBaseRangeMin: -101
-    m_VBaseRangeMax: 101
+    m_VBaseRangeMin: -91.75
+    m_VBaseRangeMax: 91.75
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1505,9 +1505,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 843
-      height: 404
+      height: 367
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 421.5, y: 202}
+    m_Translation: {x: 421.5, y: 183.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1515,12 +1515,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -210.75
-      y: -101
+      y: -91.75
       width: 421.5
-      height: 202
+      height: 183.5
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1686, y: 850}
+  m_LastWindowPixelSize: {x: 1686, y: 776}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
