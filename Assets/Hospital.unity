@@ -2222,6 +2222,49 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.2, y: 5.11}
   m_EdgeRadius: 0
+--- !u!1 &503280336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4705452662676270780, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
+  m_PrefabInstance: {fileID: 1305043412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &503280343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503280336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 0}
+  useCustomActions: 0
+  customActions:
+    m_PersistentCalls:
+      m_Calls: []
+  happenOnlyOnce: 0
+  filterByTag: 0
+  filterTag: Player
+  frequency: 1
+  eventType: 0
+--- !u!114 &503280344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503280336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b6d0125816b47ef98ecc18e31894a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToMove: {fileID: 0}
+  newPosition: {x: 0, y: 0}
+  stopMovements: 1
 --- !u!1001 &504779788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53635,7 +53678,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4705452662676270780, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 503280344}
+    - targetCorrespondingSourceObject: {fileID: 4705452662676270780, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 503280343}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
 --- !u!1 &1309537116
 GameObject:
