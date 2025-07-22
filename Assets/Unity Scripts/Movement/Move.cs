@@ -5,24 +5,27 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Move : Physics2DObject
 {
-	[Header("Input keys")]
-	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
+    [Header("Input keys")]
+    public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
-	[Header("Movement")]
-	[Tooltip("Speed of movement")]
-	public float speed = 5f;
-	public Enums.MovementType movementType = Enums.MovementType.AllDirections;
+    [Header("Movement")]
+    [Tooltip("Speed of movement")]
+    public float speed = 5f;
+    public Enums.MovementType movementType = Enums.MovementType.AllDirections;
 
-	[Header("Orientation")]
-	public bool orientToDirection = false;
-	// The direction that will face the player
-	public Enums.Directions lookAxis = Enums.Directions.Up;
+    [Header("Orientation")]
+    public bool orientToDirection = false;
+    public Enums.Directions lookAxis = Enums.Directions.Up;
 
-	private Vector3 movement, cachedDirection;
-	private float moveHorizontal;
-	private float moveVertical;
+    private Vector3 movement, cachedDirection;
+    private float moveHorizontal;
+    private float moveVertical;
 
-    //Animations
+    // Cache last direction for idle animations
+    private float lastMoveX = 0f;
+    private float lastMoveY = -1f; // Default facing down
+
+    // Animations
     public Animator animator;
 
     private void Start()
@@ -30,70 +33,75 @@ public class Move : Physics2DObject
         animator = GetComponent<Animator>();
         Debug.Log(animator);
     }
-    // Update gets called every frame
-    void Update ()
-	{
-        //#if UNITY_STANDALONE || !UNITY_EDITOR
-        // Moving with the arrow keys
-        if(typeOfControl == Enums.KeyGroups.ArrowKeys)
-		{
-			moveHorizontal = Input.GetAxis("Horizontal");
-			moveVertical = Input.GetAxis("Vertical");
-		}
-		else if (typeOfControl == Enums.KeyGroups.WASD)
-		{
-			moveHorizontal = Input.GetAxis("Horizontal2");
-			moveVertical = Input.GetAxis("Vertical2");
-		}
-        //#endif
-    
-        //zero-out the axes that are not needed, if the movement is constrained
-        switch(movementType)
-		{
-			case Enums.MovementType.OnlyHorizontal:
-				moveVertical = 0f;
-				break;
-			case Enums.MovementType.OnlyVertical:
-				moveHorizontal = 0f;
-				break;
-		}
-			
-		movement = new Vector3(moveHorizontal, moveVertical);
-        //if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
 
+    // Update gets called every frame
+    void Update()
+    {
+        // Input
+        if (typeOfControl == Enums.KeyGroups.ArrowKeys)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = Input.GetAxis("Vertical");
+        }
+        else if (typeOfControl == Enums.KeyGroups.WASD)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal2");
+            moveVertical = Input.GetAxis("Vertical2");
+        }
+
+        // Deadzone to prevent flickering
+        if (Mathf.Abs(moveHorizontal) < 0.01f) moveHorizontal = 0f;
+        if (Mathf.Abs(moveVertical) < 0.01f) moveVertical = 0f;
+
+        // Constrain movement
+        switch (movementType)
+        {
+            case Enums.MovementType.OnlyHorizontal:
+                moveVertical = 0f;
+                break;
+            case Enums.MovementType.OnlyVertical:
+                moveHorizontal = 0f;
+                break;
+        }
+
+        movement = new Vector3(moveHorizontal, moveVertical);
+
+        // Animator updates
         if (animator != null)
         {
             animator.SetFloat("MoveX", moveHorizontal);
             animator.SetFloat("MoveY", moveVertical);
             animator.SetFloat("Speed", movement.sqrMagnitude);
             animator.SetBool("IsMoving", movement.sqrMagnitude > 0.01f);
+
+            // Cache last move direction if moving
+            if (moveHorizontal != 0 || moveVertical != 0)
+            {
+                lastMoveX = moveHorizontal;
+                lastMoveY = moveVertical;
+            }
+
+            animator.SetFloat("LastMoveX", lastMoveX);
+            animator.SetFloat("LastMoveY", lastMoveY);
         }
 
-
-        //rotate the GameObject towards the direction of movement
-        //the axis to look can be decided with the "axis" variable
+        // Rotate the GameObject if needed
         if (orientToDirection)
-		{
-			if(movement.sqrMagnitude >= 0.01f)
-			{
-				cachedDirection = movement;
-			}
-			Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
-		}
-	}
+        {
+            if (movement.sqrMagnitude >= 0.01f)
+            {
+                cachedDirection = movement;
+            }
+            Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
+        }
+    }
 
-
-
-	// FixedUpdate is called every frame when the physics are calculated
-	void FixedUpdate ()
-	{
-        // Apply the force to the Rigidbody2d
-        //rigidbody2D.AddForce(movement * speed * 10f);
+    // FixedUpdate is called every frame when the physics are calculated
+    void FixedUpdate()
+    {
         transform.position += movement * Time.deltaTime * speed * 10f;
-	}
+    }
 
-
-    // Set the horizontal move direction to left (-1) or right (1)
     // Called by mobile input UI buttons
     public void SetHorizontalInput(int input)
     {
@@ -102,24 +110,18 @@ public class Move : Physics2DObject
 
     public void SetMoveLeft()
     {
-        //if (animator != null) animator.SetFloat("runSpeed", speed);
-        //if (animator != null) animator.SetBool("Moving", true);
         Debug.Log("Left");
         moveHorizontal = -1;
     }
 
     public void SetMoveRight()
     {
-        //if (animator != null) animator.SetFloat("runSpeed", speed);
-        //if (animator != null) animator.SetBool("Moving", true);
-        Debug.Log("Left");
+        Debug.Log("Right");
         moveHorizontal = 1;
     }
 
     public void StopMoving()
     {
-        //if (animator != null) animator.SetFloat("runSpeed", 0f);
-        //if (animator != null) animator.SetBool("Moving", false);
         moveHorizontal = 0;
     }
 }
