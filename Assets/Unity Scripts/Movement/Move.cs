@@ -59,12 +59,20 @@ public class Move : Physics2DObject
 		}
 			
 		movement = new Vector3(moveHorizontal, moveVertical);
-        if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
+        //if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
+
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", moveHorizontal);
+            animator.SetFloat("MoveY", moveVertical);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+            animator.SetBool("IsMoving", movement.sqrMagnitude > 0.01f);
+        }
 
 
-		//rotate the GameObject towards the direction of movement
-		//the axis to look can be decided with the "axis" variable
-		if(orientToDirection)
+        //rotate the GameObject towards the direction of movement
+        //the axis to look can be decided with the "axis" variable
+        if (orientToDirection)
 		{
 			if(movement.sqrMagnitude >= 0.01f)
 			{

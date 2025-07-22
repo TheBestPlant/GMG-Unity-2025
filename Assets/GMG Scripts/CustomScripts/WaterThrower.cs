@@ -104,11 +104,20 @@ public class WaterThrower : MonoBehaviour
             water.GetComponent<WaterProjectile>().SetDirection(facingDirection);
             currentWater--;
             lastThrowTime = Time.time;
+
+            // Trigger attack animation
+            Animator anim = GetComponent<Animator>();
+            if (anim != null)
+            {
+                anim.SetTrigger("Attack");
+                anim.SetFloat("MoveX", facingDirection.x);
+                anim.SetFloat("MoveY", facingDirection.y);
+            }
+
             if (audioSource != null && waterThrowSound != null)
             {
                 audioSource.PlayOneShot(waterThrowSound);
             }
-            return;
         }
         else
         {
