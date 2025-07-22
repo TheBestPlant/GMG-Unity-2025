@@ -1163,7 +1163,7 @@ MonoBehaviour:
   typeOfControl: 0
   speed: 0.5
   movementType: 0
-  orientToDirection: 1
+  orientToDirection: 0
   lookAxis: 1
   animator: {fileID: 0}
 --- !u!50 &394257327
@@ -1384,7 +1384,7 @@ Animator:
   m_GameObject: {fileID: 394257325}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c858c948bf079cf44bcb71cd8bebf2b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
