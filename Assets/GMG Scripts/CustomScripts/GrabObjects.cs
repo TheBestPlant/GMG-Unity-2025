@@ -12,7 +12,7 @@ public class GrabObjects : MonoBehaviour
     private int layerIndex;
 
     public NoteUIManager noteUIManager;
-    public WaterThrower waterThrower; // Assign in Inspector
+    public WaterThrower waterThrower;
 
     public AudioSource audioSource;
     public AudioClip keycardPickupSound;
@@ -26,85 +26,112 @@ public class GrabObjects : MonoBehaviour
     private string acquiredKeyID = null;
     private bool justPickedUp = false;
 
+    private Vector2 lastDirection = Vector2.right;
+    private Vector3 originalGrabPointLocalPos;
+    private Vector3 originalRayPointLocalPos;
+
     private void Start()
     {
         layerIndex = LayerMask.NameToLayer("Objects");
+        originalGrabPointLocalPos = grabPoint.localPosition;
+        originalRayPointLocalPos = rayPoint.localPosition;
     }
 
     void Update()
     {
-        justPickedUp = false; // Reset every frame
+        justPickedUp = false;
 
-        RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.right, rayDistance);
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        Vector2 input = new Vector2(moveX, moveY);
+        if (input.sqrMagnitude > 0.01f)
+        {
+            // Determine cardinal direction
+            if (Mathf.Abs(moveX) > Mathf.Abs(moveY))
+            {
+                lastDirection = moveX > 0 ? Vector2.right : Vector2.left;
+            }
+            else
+            {
+                lastDirection = moveY > 0 ? Vector2.up : Vector2.down;
+            }
+
+            // Update grabPoint local position
+            grabPoint.localPosition = new Vector3(
+                lastDirection.x * Mathf.Abs(originalGrabPointLocalPos.x),
+                lastDirection.y * Mathf.Abs(originalGrabPointLocalPos.y),
+                originalGrabPointLocalPos.z
+            );
+
+            // Update rayPoint local position
+            rayPoint.localPosition = new Vector3(
+                lastDirection.x * Mathf.Abs(originalRayPointLocalPos.x),
+                lastDirection.y * Mathf.Abs(originalRayPointLocalPos.y),
+                originalRayPointLocalPos.z
+            );
+        }
+
+        RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, lastDirection, rayDistance);
 
         if (hitInfo.collider != null)
         {
             GameObject target = hitInfo.collider.gameObject;
 
-            // --- Pick up Keycard or Grabbable Object ---
             if (target.layer == layerIndex && grabbedObject == null)
             {
                 if (Keyboard.current.spaceKey.wasPressedThisFrame)
                 {
-                    // Keycard logic
                     Keycard keycard = target.GetComponent<Keycard>();
                     if (keycard != null)
                     {
                         acquiredKeyID = keycard.doorID;
                         Destroy(target);
                         Debug.Log($"Picked up keycard for door ID: {acquiredKeyID}");
-                        if (audioSource != null && keycardPickupSound != null)
-                        {
+                        if (audioSource && keycardPickupSound)
                             audioSource.PlayOneShot(keycardPickupSound);
-                        }
                         return;
                     }
 
-                    // Lighter logic
                     if (target.CompareTag("Lighter"))
                     {
                         if (waterThrower != null)
-                        {
-                            waterThrower.GiveLighter(); // Grant fire ability
-                        }
-                        Destroy(target); // Remove lighter from scene
+                            waterThrower.GiveLighter();
+
+                        Destroy(target);
                         Debug.Log("Picked up lighter.");
-                        if (audioSource != null && lighterPickupSound != null)
-                        {
+                        if (audioSource && lighterPickupSound)
                             audioSource.PlayOneShot(lighterPickupSound);
-                        }
                         return;
                     }
 
-                    // Normal grabbable object logic
                     grabbedObject = target;
                     grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
                     grabbedObject.transform.position = grabPoint.position;
                     grabbedObject.transform.SetParent(transform);
 
-                    // Show note if it's a note
+                    Vector3 scale = grabbedObject.transform.localScale;
+                    if (lastDirection.x != 0)
+                        scale.x = Mathf.Abs(scale.x) * Mathf.Sign(lastDirection.x);
+                    grabbedObject.transform.localScale = scale;
+
                     Note note = grabbedObject.GetComponent<Note>();
                     if (note != null)
                     {
                         noteUIManager.ShowNote(note.noteMessage);
-                        if (audioSource != null && notePickupSound != null)
-                        {
+                        if (audioSource && notePickupSound)
                             audioSource.PlayOneShot(notePickupSound);
-                        }
                     }
                     else
                     {
-                        if (audioSource != null && pickupSound != null)
-                        {
+                        if (audioSource && pickupSound)
                             audioSource.PlayOneShot(pickupSound);
-                        }
                     }
 
-                        justPickedUp = true;
+                    justPickedUp = true;
                 }
             }
 
-            // --- Door Interaction ---
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 Door door = target.GetComponent<Door>();
@@ -114,10 +141,8 @@ public class GrabObjects : MonoBehaviour
                     {
                         Destroy(door.gameObject);
                         Debug.Log($"Unlocked and destroyed door: {door.doorID}");
-                        if (audioSource != null && doorDestroySound != null)
-                        {
+                        if (audioSource && doorDestroySound)
                             audioSource.PlayOneShot(doorDestroySound);
-                        }
                     }
                     else
                     {
@@ -127,7 +152,6 @@ public class GrabObjects : MonoBehaviour
             }
         }
 
-        // --- Drop Logic ---
         if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject != null && !justPickedUp)
         {
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
@@ -138,28 +162,27 @@ public class GrabObjects : MonoBehaviour
 
             StartCoroutine(DropObjectSmoothly(grabbedObject, targetPosition));
 
-            // Hide note if it was a note
             if (grabbedObject.CompareTag("Note"))
             {
                 noteUIManager.HideNote();
-                if (audioSource != null && noteDropSound != null)
-                {
+                if (audioSource && noteDropSound)
                     audioSource.PlayOneShot(noteDropSound);
-                }
             }
             else
             {
-                if (audioSource != null && dropSound != null)
-                {
+                if (audioSource && dropSound)
                     audioSource.PlayOneShot(dropSound);
-                }
             }
 
-
-                grabbedObject = null;
+            grabbedObject = null;
         }
 
-        Debug.DrawRay(rayPoint.position, transform.right * rayDistance, Color.red);
+        if (grabbedObject != null)
+        {
+            grabbedObject.transform.position = grabPoint.position;
+        }
+
+        Debug.DrawRay(rayPoint.position, lastDirection * rayDistance, Color.red);
     }
 
     private IEnumerator DropObjectSmoothly(GameObject obj, Vector3 dropToPosition)
