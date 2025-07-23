@@ -14,10 +14,7 @@ public class WaterProjectile : MonoBehaviour
     public void SetDirection(Vector2 direction)
     {
         moveDirection = direction.normalized;
-
-        // Optional: rotate projectile to face direction
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        FlipSprite(direction);
     }
 
     void Update()
@@ -31,6 +28,32 @@ public class WaterProjectile : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+        }
+    }
+
+    private void FlipSprite(Vector2 direction)
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr == null) return;
+
+        // Reset flips first
+        sr.flipX = false;
+        sr.flipY = false;
+
+        // Flip logic
+        if (direction.x < 0)
+        {
+            sr.flipX = true; // Flip horizontally when facing left
+        }
+        else if (direction.y > 0)
+        {
+            sr.flipY = false; // Facing up — no flip
+        }
+        else if (direction.y < 0)
+        {
+            // Facing down — explicitly no flip
+            sr.flipX = false;
+            sr.flipY = false;
         }
     }
 }
