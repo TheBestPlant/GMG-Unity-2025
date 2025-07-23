@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 3f98f7303a58d4275accdc456d178fdc
+guid: d035c4507df99a24f86823c5897d9018
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6318340749483591315
-    second: spritesheet mike gooder_0
-  - first:
-      213: -5903500627887815865
-    second: spritesheet mike gooder_1
-  - first:
-      213: -3438386574733258332
-    second: spritesheet mike gooder_2
-  - first:
-      213: -4196177264472981712
-    second: spritesheet mike gooder_3
-  - first:
-      213: -4120606581508041675
-    second: spritesheet mike gooder_4
+      213: 6735750473450299513
+    second: Water_Animation 1_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet mike gooder_0
+      name: Water_Animation 1_2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1119
-        width: 497
-        height: 354
+        y: 11
+        width: 26
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39648d68f614fa750800000000000000
-      internalID: 6318340749483591315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet mike gooder_1
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 1119
-        width: 498
-        height: 354
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 743837ff47d821ea0800000000000000
-      internalID: -5903500627887815865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet mike gooder_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 607
-        width: 497
-        height: 354
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a15d8ca0a56840d0800000000000000
-      internalID: -3438386574733258332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet mike gooder_3
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 607
-        width: 498
-        height: 354
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03f7480a20f24c5c0800000000000000
-      internalID: -4196177264472981712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet mike gooder_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 513
-        height: 513
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5349312652aa0d6c0800000000000000
-      internalID: -4120606581508041675
+      spriteID: 970aca93e513a7d50800000000000000
+      internalID: 6735750473450299513
       vertices: []
       indices: 
       edges: []
@@ -238,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet mike gooder_0: 6318340749483591315
-      spritesheet mike gooder_1: -5903500627887815865
-      spritesheet mike gooder_2: -3438386574733258332
-      spritesheet mike gooder_3: -4196177264472981712
-      spritesheet mike gooder_4: -4120606581508041675
+      Water_Animation 1_2_0: 6735750473450299513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
