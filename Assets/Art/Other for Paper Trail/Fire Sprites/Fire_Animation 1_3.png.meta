@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f1b0d31352e2094696967f8a5d84cc3
+guid: 0f793c4a282e9b24881e58d18f2dca6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4169728402195113085
-    second: Water_Animation 1_1_0
+      213: 1198377258080150760
+    second: Fire_Animation 1_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_Animation 1_1_0
+      name: Fire_Animation 1_3_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 17
-        width: 21
-        height: 10
+        x: 4
+        y: 1
+        width: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7462beb3e9ddd930800000000000000
-      internalID: 4169728402195113085
+      spriteID: 8e426c654cd71a010800000000000000
+      internalID: 1198377258080150760
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Water_Animation 1_1_0: 4169728402195113085
+      Fire_Animation 1_3_0: 1198377258080150760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
