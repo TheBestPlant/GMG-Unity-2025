@@ -1,103 +1,103 @@
 fileFormatVersion: 2
-guid: 3438276d286224db2a62a93459eaf02a
+guid: 668c00b0790e1486ea0c15910b8e33f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6170697862124077748
-    second: TablesAndSuchGMG_0
+      213: -3865968199022097292
+    second: TablesAndSuchGMG 1_0
   - first:
-      213: -8051728573878952032
-    second: TablesAndSuchGMG_1
+      213: -4292486704299558484
+    second: TablesAndSuchGMG 1_1
   - first:
-      213: -3922394250143682955
-    second: TablesAndSuchGMG_2
+      213: 3193582272776362086
+    second: TablesAndSuchGMG 1_2
   - first:
-      213: -1006489537148149981
-    second: TablesAndSuchGMG_3
+      213: 5137793853753375668
+    second: TablesAndSuchGMG 1_3
   - first:
-      213: 4707547692720335684
-    second: TablesAndSuchGMG_4
+      213: 4347415625881669785
+    second: TablesAndSuchGMG 1_4
   - first:
-      213: -7779374435441322157
-    second: TablesAndSuchGMG_5
+      213: -8758377405055384325
+    second: TablesAndSuchGMG 1_5
   - first:
-      213: -3517664094480521256
-    second: TablesAndSuchGMG_6
+      213: -6509601739467533661
+    second: TablesAndSuchGMG 1_6
   - first:
-      213: -3314775956193694900
-    second: TablesAndSuchGMG_7
+      213: 7987542254325100767
+    second: TablesAndSuchGMG 1_7
   - first:
-      213: 9061465591078886667
-    second: TablesAndSuchGMG_8
+      213: 5446174796788445669
+    second: TablesAndSuchGMG 1_8
   - first:
-      213: -1537473443617849435
-    second: TablesAndSuchGMG_9
+      213: -6403429586537023291
+    second: TablesAndSuchGMG 1_9
   - first:
-      213: 3109683704068335310
-    second: TablesAndSuchGMG_10
+      213: 4836046426153729024
+    second: TablesAndSuchGMG 1_10
   - first:
-      213: 7005207357869684296
-    second: TablesAndSuchGMG_11
+      213: 2214754472295989643
+    second: TablesAndSuchGMG 1_11
   - first:
-      213: -7579637487139639122
-    second: TablesAndSuchGMG_12
+      213: -3001028286066752071
+    second: TablesAndSuchGMG 1_12
   - first:
-      213: -2949945742160571020
-    second: TablesAndSuchGMG_13
+      213: -466277233198432326
+    second: TablesAndSuchGMG 1_13
   - first:
-      213: 2521339941560582010
-    second: TablesAndSuchGMG_14
+      213: -2231383756743411610
+    second: TablesAndSuchGMG 1_14
   - first:
-      213: -5960896576559042661
-    second: TablesAndSuchGMG_15
+      213: 4480703549315573828
+    second: TablesAndSuchGMG 1_15
   - first:
-      213: 1388970651514307281
-    second: TablesAndSuchGMG_16
+      213: 1681102704444637037
+    second: TablesAndSuchGMG 1_16
   - first:
-      213: -5035312301734594691
-    second: TablesAndSuchGMG_17
+      213: 1710889622361335254
+    second: TablesAndSuchGMG 1_17
   - first:
-      213: -6016976287951791569
-    second: TablesAndSuchGMG_18
+      213: -1121603227399258313
+    second: TablesAndSuchGMG 1_18
   - first:
-      213: 7841996066334199839
-    second: TablesAndSuchGMG_19
+      213: 6685025284816491104
+    second: TablesAndSuchGMG 1_19
   - first:
-      213: 5994740907630331137
-    second: TablesAndSuchGMG_20
+      213: 3947871326650829016
+    second: TablesAndSuchGMG 1_20
   - first:
-      213: 4776322640938663320
-    second: TablesAndSuchGMG_21
+      213: -7992492889755802649
+    second: TablesAndSuchGMG 1_21
   - first:
-      213: 1168818420564393775
-    second: TablesAndSuchGMG_22
+      213: 1576984760168849043
+    second: TablesAndSuchGMG 1_22
   - first:
-      213: -5268615245632996065
-    second: TablesAndSuchGMG_23
+      213: -5112713778431001400
+    second: TablesAndSuchGMG 1_23
   - first:
-      213: -2013058803635964883
-    second: TablesAndSuchGMG_24
+      213: 6492228409013996469
+    second: TablesAndSuchGMG 1_24
   - first:
-      213: 8569078859090058692
-    second: TablesAndSuchGMG_25
+      213: -5490574029912420945
+    second: TablesAndSuchGMG 1_25
   - first:
-      213: -5897434177061883132
-    second: TablesAndSuchGMG_26
+      213: 6112046561993534406
+    second: TablesAndSuchGMG 1_26
   - first:
-      213: 8227377306457043577
-    second: TablesAndSuchGMG_27
+      213: 899454357922196997
+    second: TablesAndSuchGMG 1_27
   - first:
-      213: 8418779479799673662
-    second: TablesAndSuchGMG_28
+      213: -1516209249081321884
+    second: TablesAndSuchGMG 1_28
   - first:
-      213: -6443965471583404312
-    second: TablesAndSuchGMG_29
+      213: -8235961077353612852
+    second: TablesAndSuchGMG 1_29
   - first:
-      213: -9210285216268301623
-    second: TablesAndSuchGMG_30
+      213: -6164128869907892235
+    second: TablesAndSuchGMG 1_30
   - first:
-      213: -3626870130612814571
-    second: TablesAndSuchGMG_31
+      213: -4457485772670492907
+    second: TablesAndSuchGMG 1_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -144,7 +144,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,7 +168,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -206,7 +206,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TablesAndSuchGMG_0
+      name: TablesAndSuchGMG 1_0
       rect:
         serializedVersion: 2
         x: 31
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b20b280309b2a550800000000000000
-      internalID: 6170697862124077748
+      spriteID: 47cc450e762595ac0800000000000000
+      internalID: -3865968199022097292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_1
+      name: TablesAndSuchGMG 1_1
       rect:
         serializedVersion: 2
         x: 31
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af151e9583824090800000000000000
-      internalID: -8051728573878952032
+      spriteID: ca93323c5160e64c0800000000000000
+      internalID: -4292486704299558484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_2
+      name: TablesAndSuchGMG 1_2
       rect:
         serializedVersion: 2
         x: 52
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57ea623163bd099c0800000000000000
-      internalID: -3922394250143682955
+      spriteID: 668d1d12822e15c20800000000000000
+      internalID: 3193582272776362086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_3
+      name: TablesAndSuchGMG 1_3
       rect:
         serializedVersion: 2
         x: 100
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32f132c391b3802f0800000000000000
-      internalID: -1006489537148149981
+      spriteID: 4bbb72ee94c1d4740800000000000000
+      internalID: 5137793853753375668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_4
+      name: TablesAndSuchGMG 1_4
       rect:
         serializedVersion: 2
         x: 180
@@ -309,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44b2ec35fa1945140800000000000000
-      internalID: 4707547692720335684
+      spriteID: 990d8a76a7f155c30800000000000000
+      internalID: 4347415625881669785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_5
+      name: TablesAndSuchGMG 1_5
       rect:
         serializedVersion: 2
         x: 228
@@ -331,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 357d3c8fa2c1a0490800000000000000
-      internalID: -7779374435441322157
+      spriteID: bf4cdda672ef37680800000000000000
+      internalID: -8758377405055384325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_6
+      name: TablesAndSuchGMG 1_6
       rect:
         serializedVersion: 2
         x: 31
@@ -353,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d7a759b42fbe2fc0800000000000000
-      internalID: -3517664094480521256
+      spriteID: 3a2d5c115bf39a5a0800000000000000
+      internalID: -6509601739467533661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_7
+      name: TablesAndSuchGMG 1_7
       rect:
         serializedVersion: 2
         x: 159
@@ -375,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4ba11d84dc8ff1d0800000000000000
-      internalID: -3314775956193694900
+      spriteID: fd078794c5379de60800000000000000
+      internalID: 7987542254325100767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_8
+      name: TablesAndSuchGMG 1_8
       rect:
         serializedVersion: 2
         x: 42
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0d9ea402fac0cd70800000000000000
-      internalID: 9061465591078886667
+      spriteID: 5e1b2436f13b49b40800000000000000
+      internalID: 5446174796788445669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_9
+      name: TablesAndSuchGMG 1_9
       rect:
         serializedVersion: 2
         x: 107
@@ -419,14 +419,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5afbf858c0cc9aae0800000000000000
-      internalID: -1537473443617849435
+      spriteID: 5c8fb36c7b27227a0800000000000000
+      internalID: -6403429586537023291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_10
+      name: TablesAndSuchGMG 1_10
       rect:
         serializedVersion: 2
         x: 170
@@ -441,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec660d06ad0d72b20800000000000000
-      internalID: 3109683704068335310
+      spriteID: 00cb0342a961d1340800000000000000
+      internalID: 4836046426153729024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_11
+      name: TablesAndSuchGMG 1_11
       rect:
         serializedVersion: 2
         x: 235
@@ -463,14 +463,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84676cf0afe773160800000000000000
-      internalID: 7005207357869684296
+      spriteID: b8109e155736cbe10800000000000000
+      internalID: 2214754472295989643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_12
+      name: TablesAndSuchGMG 1_12
       rect:
         serializedVersion: 2
         x: 42
@@ -485,14 +485,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea0bec43dd7bfc690800000000000000
-      internalID: -7579637487139639122
+      spriteID: 9b587188ca43a56d0800000000000000
+      internalID: -3001028286066752071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_13
+      name: TablesAndSuchGMG 1_13
       rect:
         serializedVersion: 2
         x: 107
@@ -507,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 475d7db1affaf07d0800000000000000
-      internalID: -2949945742160571020
+      spriteID: abffa5ca3537789f0800000000000000
+      internalID: -466277233198432326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_14
+      name: TablesAndSuchGMG 1_14
       rect:
         serializedVersion: 2
         x: 170
@@ -529,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7ff8b671599df220800000000000000
-      internalID: 2521339941560582010
+      spriteID: 6687bbdab488801e0800000000000000
+      internalID: -2231383756743411610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_15
+      name: TablesAndSuchGMG 1_15
       rect:
         serializedVersion: 2
         x: 235
@@ -551,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9f2b535524a64da0800000000000000
-      internalID: -5960896576559042661
+      spriteID: 44869c86328ae2e30800000000000000
+      internalID: 4480703549315573828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_16
+      name: TablesAndSuchGMG 1_16
       rect:
         serializedVersion: 2
         x: 34
@@ -573,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d204fec27d964310800000000000000
-      internalID: 1388970651514307281
+      spriteID: d6ffe59b00a745710800000000000000
+      internalID: 1681102704444637037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_17
+      name: TablesAndSuchGMG 1_17
       rect:
         serializedVersion: 2
         x: 66
@@ -595,14 +595,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7774f9c32afe1ab0800000000000000
-      internalID: -5035312301734594691
+      spriteID: 6d5efbefb0d4eb710800000000000000
+      internalID: 1710889622361335254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_18
+      name: TablesAndSuchGMG 1_18
       rect:
         serializedVersion: 2
         x: 97
@@ -617,14 +617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2a5fa602f76f7ca0800000000000000
-      internalID: -6016976287951791569
+      spriteID: 73f7fe3aec34f60f0800000000000000
+      internalID: -1121603227399258313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_19
+      name: TablesAndSuchGMG 1_19
       rect:
         serializedVersion: 2
         x: 132
@@ -639,14 +639,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f105cd7afdd54dc60800000000000000
-      internalID: 7841996066334199839
+      spriteID: 062ddf7e31bf5cc50800000000000000
+      internalID: 6685025284816491104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_20
+      name: TablesAndSuchGMG 1_20
       rect:
         serializedVersion: 2
         x: 188
@@ -661,14 +661,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1050fcf0819913350800000000000000
-      internalID: 5994740907630331137
+      spriteID: 8d809fb0e08a9c630800000000000000
+      internalID: 3947871326650829016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_21
+      name: TablesAndSuchGMG 1_21
       rect:
         serializedVersion: 2
         x: 244
@@ -683,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89dfdc9c228e84240800000000000000
-      internalID: 4776322640938663320
+      spriteID: 7e325441016f41190800000000000000
+      internalID: -7992492889755802649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_22
+      name: TablesAndSuchGMG 1_22
       rect:
         serializedVersion: 2
         x: 178
@@ -705,14 +705,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2f7cac292a783010800000000000000
-      internalID: 1168818420564393775
+      spriteID: 39e911eb84392e510800000000000000
+      internalID: 1576984760168849043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_23
+      name: TablesAndSuchGMG 1_23
       rect:
         serializedVersion: 2
         x: 242
@@ -727,14 +727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1d76d1395e12e6b0800000000000000
-      internalID: -5268615245632996065
+      spriteID: 8ccff5628edfb09b0800000000000000
+      internalID: -5112713778431001400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_24
+      name: TablesAndSuchGMG 1_24
       rect:
         serializedVersion: 2
         x: 34
@@ -749,14 +749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d243e490fad2014e0800000000000000
-      internalID: -2013058803635964883
+      spriteID: 5bb8af73757091a50800000000000000
+      internalID: 6492228409013996469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_25
+      name: TablesAndSuchGMG 1_25
       rect:
         serializedVersion: 2
         x: 66
@@ -771,14 +771,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cd5f5842db7be670800000000000000
-      internalID: 8569078859090058692
+      spriteID: fadc51692009dc3b0800000000000000
+      internalID: -5490574029912420945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_26
+      name: TablesAndSuchGMG 1_26
       rect:
         serializedVersion: 2
         x: 97
@@ -793,14 +793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4037af5acda182ea0800000000000000
-      internalID: -5897434177061883132
+      spriteID: 6cba54217f952d450800000000000000
+      internalID: 6112046561993534406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_27
+      name: TablesAndSuchGMG 1_27
       rect:
         serializedVersion: 2
         x: 132
@@ -815,14 +815,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9727b78d1148d2270800000000000000
-      internalID: 8227377306457043577
+      spriteID: 50e21a719f08b7c00800000000000000
+      internalID: 899454357922196997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_28
+      name: TablesAndSuchGMG 1_28
       rect:
         serializedVersion: 2
         x: 179
@@ -837,14 +837,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e33becf055385d470800000000000000
-      internalID: 8418779479799673662
+      spriteID: 466985f98b755fae0800000000000000
+      internalID: -1516209249081321884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_29
+      name: TablesAndSuchGMG 1_29
       rect:
         serializedVersion: 2
         x: 244
@@ -859,14 +859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ee73619b8f6296a0800000000000000
-      internalID: -6443965471583404312
+      spriteID: cc9f460490df3bd80800000000000000
+      internalID: -8235961077353612852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_30
+      name: TablesAndSuchGMG 1_30
       rect:
         serializedVersion: 2
         x: 168
@@ -881,14 +881,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cacb4cd46e7e2080800000000000000
-      internalID: -9210285216268301623
+      spriteID: 5f7f867a37d947aa0800000000000000
+      internalID: -6164128869907892235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TablesAndSuchGMG_31
+      name: TablesAndSuchGMG 1_31
       rect:
         serializedVersion: 2
         x: 244
@@ -903,8 +903,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51d395a05d4caadc0800000000000000
-      internalID: -3626870130612814571
+      spriteID: 51f1e987e44d322c0800000000000000
+      internalID: -4457485772670492907
       vertices: []
       indices: 
       edges: []
@@ -923,38 +923,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TablesAndSuchGMG_0: 6170697862124077748
-      TablesAndSuchGMG_1: -8051728573878952032
-      TablesAndSuchGMG_10: 3109683704068335310
-      TablesAndSuchGMG_11: 7005207357869684296
-      TablesAndSuchGMG_12: -7579637487139639122
-      TablesAndSuchGMG_13: -2949945742160571020
-      TablesAndSuchGMG_14: 2521339941560582010
-      TablesAndSuchGMG_15: -5960896576559042661
-      TablesAndSuchGMG_16: 1388970651514307281
-      TablesAndSuchGMG_17: -5035312301734594691
-      TablesAndSuchGMG_18: -6016976287951791569
-      TablesAndSuchGMG_19: 7841996066334199839
-      TablesAndSuchGMG_2: -3922394250143682955
-      TablesAndSuchGMG_20: 5994740907630331137
-      TablesAndSuchGMG_21: 4776322640938663320
-      TablesAndSuchGMG_22: 1168818420564393775
-      TablesAndSuchGMG_23: -5268615245632996065
-      TablesAndSuchGMG_24: -2013058803635964883
-      TablesAndSuchGMG_25: 8569078859090058692
-      TablesAndSuchGMG_26: -5897434177061883132
-      TablesAndSuchGMG_27: 8227377306457043577
-      TablesAndSuchGMG_28: 8418779479799673662
-      TablesAndSuchGMG_29: -6443965471583404312
-      TablesAndSuchGMG_3: -1006489537148149981
-      TablesAndSuchGMG_30: -9210285216268301623
-      TablesAndSuchGMG_31: -3626870130612814571
-      TablesAndSuchGMG_4: 4707547692720335684
-      TablesAndSuchGMG_5: -7779374435441322157
-      TablesAndSuchGMG_6: -3517664094480521256
-      TablesAndSuchGMG_7: -3314775956193694900
-      TablesAndSuchGMG_8: 9061465591078886667
-      TablesAndSuchGMG_9: -1537473443617849435
+      TablesAndSuchGMG 1_0: -3865968199022097292
+      TablesAndSuchGMG 1_1: -4292486704299558484
+      TablesAndSuchGMG 1_10: 4836046426153729024
+      TablesAndSuchGMG 1_11: 2214754472295989643
+      TablesAndSuchGMG 1_12: -3001028286066752071
+      TablesAndSuchGMG 1_13: -466277233198432326
+      TablesAndSuchGMG 1_14: -2231383756743411610
+      TablesAndSuchGMG 1_15: 4480703549315573828
+      TablesAndSuchGMG 1_16: 1681102704444637037
+      TablesAndSuchGMG 1_17: 1710889622361335254
+      TablesAndSuchGMG 1_18: -1121603227399258313
+      TablesAndSuchGMG 1_19: 6685025284816491104
+      TablesAndSuchGMG 1_2: 3193582272776362086
+      TablesAndSuchGMG 1_20: 3947871326650829016
+      TablesAndSuchGMG 1_21: -7992492889755802649
+      TablesAndSuchGMG 1_22: 1576984760168849043
+      TablesAndSuchGMG 1_23: -5112713778431001400
+      TablesAndSuchGMG 1_24: 6492228409013996469
+      TablesAndSuchGMG 1_25: -5490574029912420945
+      TablesAndSuchGMG 1_26: 6112046561993534406
+      TablesAndSuchGMG 1_27: 899454357922196997
+      TablesAndSuchGMG 1_28: -1516209249081321884
+      TablesAndSuchGMG 1_29: -8235961077353612852
+      TablesAndSuchGMG 1_3: 5137793853753375668
+      TablesAndSuchGMG 1_30: -6164128869907892235
+      TablesAndSuchGMG 1_31: -4457485772670492907
+      TablesAndSuchGMG 1_4: 4347415625881669785
+      TablesAndSuchGMG 1_5: -8758377405055384325
+      TablesAndSuchGMG 1_6: -6509601739467533661
+      TablesAndSuchGMG 1_7: 7987542254325100767
+      TablesAndSuchGMG 1_8: 5446174796788445669
+      TablesAndSuchGMG 1_9: -6403429586537023291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
