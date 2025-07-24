@@ -33,6 +33,14 @@ public class GrabObjects : MonoBehaviour
     private void Start()
     {
         layerIndex = LayerMask.NameToLayer("Objects");
+
+        // Set default local positions if not already offset
+        if (grabPoint.localPosition == Vector3.zero)
+            grabPoint.localPosition = new Vector3(0.5f, 0f, 0f); // Right by default
+
+        if (rayPoint.localPosition == Vector3.zero)
+            rayPoint.localPosition = new Vector3(0.5f, 0f, 0f); // Right by default
+
         originalGrabPointLocalPos = grabPoint.localPosition;
         originalRayPointLocalPos = rayPoint.localPosition;
     }
@@ -58,18 +66,27 @@ public class GrabObjects : MonoBehaviour
             }
 
             // Update grabPoint local position
-            grabPoint.localPosition = new Vector3(
-                lastDirection.x * Mathf.Abs(originalGrabPointLocalPos.x),
-                lastDirection.y * Mathf.Abs(originalGrabPointLocalPos.y),
-                originalGrabPointLocalPos.z
-            );
-
-            // Update rayPoint local position
-            rayPoint.localPosition = new Vector3(
-                lastDirection.x * Mathf.Abs(originalRayPointLocalPos.x),
-                lastDirection.y * Mathf.Abs(originalRayPointLocalPos.y),
-                originalRayPointLocalPos.z
-            );
+            // Snap grabPoint and rayPoint to cardinal directions
+            if (lastDirection == Vector2.right)
+            {
+                grabPoint.localPosition = new Vector3(1f, 0f, 0f);
+                rayPoint.localPosition = new Vector3(1f, 0f, 0f);
+            }
+            else if (lastDirection == Vector2.left)
+            {
+                grabPoint.localPosition = new Vector3(-1f, 0f, 0f);
+                rayPoint.localPosition = new Vector3(-1f, 0f, 0f);
+            }
+            else if (lastDirection == Vector2.up)
+            {
+                grabPoint.localPosition = new Vector3(0f, 1f, 0f);
+                rayPoint.localPosition = new Vector3(0f, 1f, 0f);
+            }
+            else if (lastDirection == Vector2.down)
+            {
+                grabPoint.localPosition = new Vector3(0f, -1f, 0f);
+                rayPoint.localPosition = new Vector3(0f, -1f, 0f);
+            }
         }
 
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, lastDirection, rayDistance);

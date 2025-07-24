@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1600
     height: 817
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 72
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Deranged Drawings
+    - Assets/GMG Scripts/CustomScripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -336,16 +336,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Deranged Drawings
+  - Assets/GMG Scripts/CustomScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\savan\Documents\GitHub\DerangedDrawings
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 347}
-    m_SelectedIDs: ec850000
-    m_LastClickedID: 34284
-    m_ExpandedIDs: 000000004c8500004e85000050850000528500005485000056850000588500005a8500005c8500005e850000608500006285000000ca9a3b
+    scrollPos: {x: 0, y: 167.50018}
+    m_SelectedIDs: f0850000
+    m_LastClickedID: 34288
+    m_ExpandedIDs: 0000000066850000688500006a8500006c8500006e85000070850000728500007485000076850000788500007a8500007c85000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -374,7 +374,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c8500004e85000050850000528500005485000056850000588500005a8500005c8500005e8500006085000062850000
+    m_ExpandedIDs: 0000000066850000688500006a8500006c8500006e85000070850000728500007485000076850000788500007a8500007c850000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,9 +520,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8c7f0000
-      m_LastClickedID: 32652
-      m_ExpandedIDs: 54f0ffffbcf8ffff7cfaffff80faffff0cfbffff
+      m_SelectedIDs: b8800000
+      m_LastClickedID: 32952
+      m_ExpandedIDs: f0efffffb4f8ffffb8f8ffff56f9ffff0cfbffff287f0000c6800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1126,9 +1126,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 361.14243, y: 289.21265, z: -5.4833245}
+    m_Target: {x: 39.82492, y: -8.233561, z: -0.4265813}
     speed: 2
-    m_Value: {x: 361.14243, y: 289.21265, z: -5.4833245}
+    m_Value: {x: 39.82492, y: -8.233561, z: -0.4265813}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1178,9 +1178,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 931.6149
+    m_Target: 43.846397
     speed: 2
-    m_Value: 931.6149
+    m_Value: 43.846397
   m_Ortho:
     m_Target: 1
     speed: 2

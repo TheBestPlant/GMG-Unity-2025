@@ -11,26 +11,43 @@ public class DoorInteractor : MonoBehaviour
 
     void Update()
     {
+        // Draw debug ray in the Scene view
+        Debug.DrawRay(rayPoint.position, transform.right * interactDistance, Color.red);
+
+        // Raycast in direction of player's "forward"
         RaycastHit2D hit = Physics2D.Raycast(rayPoint.position, transform.right, interactDistance);
 
-        if (hit.collider != null && Keyboard.current.eKey.wasPressedThisFrame)
+        if (hit.collider != null)
         {
-            Door door = hit.collider.GetComponent<Door>();
-            if (door != null)
+            Debug.Log("Raycast hit: " + hit.collider.name);
+
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
-                switch (door.doorType)
+                Door door = hit.collider.GetComponent<Door>();
+                if (door != null)
                 {
-                    case DoorType.Keypad:
-                        Keypad keypad = hit.collider.GetComponent<Keypad>();
-                        if (keypad != null)
-                            keypad.ShowKeypadUI();
-                        break;
-                    case DoorType.Riddle:
-                        riddleUI.ShowRiddle(door);
-                        break;
-                    case DoorType.Keycard:
-                        // You’d call your KeycardManager here if you have one
-                        break;
+                    switch (door.doorType)
+                    {
+                        case DoorType.Keypad:
+                            Keypad keypad = hit.collider.GetComponent<Keypad>();
+                            if (keypad != null)
+                            {
+                                keypad.ShowKeypadUI();
+                            }
+                            break;
+
+                        case DoorType.Riddle:
+                            if (riddleUI != null)
+                            {
+                                riddleUI.ShowRiddle(door);
+                            }
+                            break;
+
+                        case DoorType.Keycard:
+                            // Add your keycard interaction here
+                            Debug.Log("Interacted with keycard door (not implemented)");
+                            break;
+                    }
                 }
             }
         }
