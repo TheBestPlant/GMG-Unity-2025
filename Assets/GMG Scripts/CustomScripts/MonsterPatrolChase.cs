@@ -11,20 +11,28 @@ public class MonsterPatrolChase : MonoBehaviour
     public Transform player;
     public float chaseSpeed = 4f;
     public float detectionRange = 5f;
-    public float fieldOfViewAngle = 120f; // Angle in degrees to detect player in front
+    public float fieldOfViewAngle = 120f;
 
+    [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip monsterChaseSound;
     public AudioClip returnToPatrolSound;
-    public AudioClip monsterIdleSound;
+    // public AudioClip monsterIdleSound;
 
     private Vector3 currentTarget;
     private Rigidbody2D rb;
+    private Animator animator;
+
     private bool chasing = false;
+    private bool wasChasing = false;
+
+    // private float idleTimer = 0f;
+    // public float idleInterval = 20f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         currentTarget = pointB.position;
     }
 
@@ -32,23 +40,46 @@ public class MonsterPatrolChase : MonoBehaviour
     {
         if (player == null) return;
 
-        // Check if player is detected
-        if (CanSeePlayer())
+        bool canSee = CanSeePlayer();
+
+        // Play audio once when state changes
+        if (canSee && !wasChasing)
         {
-            chasing = true;
+            audioSource.clip = monsterChaseSound;
+            audioSource.Play();
         }
-        else
+        else if (!canSee && wasChasing)
         {
-            chasing = false;
+            audioSource.clip = returnToPatrolSound;
+            audioSource.Play();
         }
+
+        chasing = canSee;
+        wasChasing = chasing;
+
+        // ✅ Update animation parameter
+        if (animator != null)
+            animator.SetBool("IsChasing", chasing);
 
         if (chasing)
         {
+            // idleTimer = 0f;
             ChasePlayer();
         }
         else
         {
             Patrol();
+
+            // Optional idle sound logic
+            /*
+            idleTimer += Time.deltaTime;
+            if (idleTimer >= idleInterval)
+            {
+                audioSource.clip = monsterIdleSound;
+                audioSource.Play();
+                idleTimer = 0f;
+            }
+            */
         }
     }
 
@@ -60,13 +91,13 @@ public class MonsterPatrolChase : MonoBehaviour
         if (distanceToPlayer > detectionRange)
             return false;
 
-        // Check if player is roughly in front (field of view)
+        // Check field of view angle
         Vector2 facingDirection = rb.linearVelocity.x >= 0 ? Vector2.right : Vector2.left;
         float angle = Vector2.Angle(facingDirection, directionToPlayer);
 
         if (angle < fieldOfViewAngle / 2f)
         {
-            // Optional: you could add a raycast here to check line of sight (no walls blocking)
+            // Optional: Add Raycast2D here for LOS check
             return true;
         }
 
@@ -78,16 +109,16 @@ public class MonsterPatrolChase : MonoBehaviour
         float step = patrolSpeed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, currentTarget, step);
 
-        // Switch target if close enough
+        // Flip sprite
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (currentTarget.x > transform.position.x ? 1 : -1);
+        transform.localScale = scale;
+
+        // Switch patrol point
         if (Vector2.Distance(transform.position, currentTarget) < 0.1f)
         {
             currentTarget = (currentTarget == pointB.position) ? pointA.position : pointB.position;
         }
-
-        // Flip sprite to face movement direction (preserve scale)
-        Vector3 scale = transform.localScale;
-        scale.x = Mathf.Abs(scale.x) * (currentTarget.x > transform.position.x ? 1 : -1);
-        transform.localScale = scale;
     }
 
     private void ChasePlayer()
@@ -95,10 +126,9 @@ public class MonsterPatrolChase : MonoBehaviour
         float step = chaseSpeed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, player.position, step);
 
-        // Flip sprite to face player (preserve scale)
+        // Flip sprite
         Vector3 scale = transform.localScale;
         scale.x = Mathf.Abs(scale.x) * (player.position.x > transform.position.x ? 1 : -1);
         transform.localScale = scale;
     }
-
 }

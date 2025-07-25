@@ -23,6 +23,10 @@ public class GrabObjects : MonoBehaviour
     public AudioClip dropSound;
     public AudioClip noteDropSound;
 
+    [Header("Movement Sound")]
+    public AudioSource walkAudioSource;
+    public AudioClip walkClip;
+
     private string acquiredKeyID = null;
     private bool justPickedUp = false;
 
@@ -34,12 +38,11 @@ public class GrabObjects : MonoBehaviour
     {
         layerIndex = LayerMask.NameToLayer("Objects");
 
-        // Set default local positions if not already offset
         if (grabPoint.localPosition == Vector3.zero)
-            grabPoint.localPosition = new Vector3(0.5f, 0f, 0f); // Right by default
+            grabPoint.localPosition = new Vector3(0.5f, 0f, 0f);
 
         if (rayPoint.localPosition == Vector3.zero)
-            rayPoint.localPosition = new Vector3(0.5f, 0f, 0f); // Right by default
+            rayPoint.localPosition = new Vector3(0.5f, 0f, 0f);
 
         originalGrabPointLocalPos = grabPoint.localPosition;
         originalRayPointLocalPos = rayPoint.localPosition;
@@ -53,20 +56,34 @@ public class GrabObjects : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         Vector2 input = new Vector2(moveX, moveY);
-        if (input.sqrMagnitude > 0.01f)
+
+        // Handle walking sound
+        if (walkAudioSource != null && walkClip != null)
         {
-            // Determine cardinal direction
-            if (Mathf.Abs(moveX) > Mathf.Abs(moveY))
+            if (input.sqrMagnitude > 0.01f)
             {
-                lastDirection = moveX > 0 ? Vector2.right : Vector2.left;
+                if (!walkAudioSource.isPlaying)
+                {
+                    walkAudioSource.clip = walkClip;
+                    walkAudioSource.loop = true;
+                    walkAudioSource.Play();
+                }
             }
             else
             {
-                lastDirection = moveY > 0 ? Vector2.up : Vector2.down;
+                if (walkAudioSource.isPlaying)
+                    walkAudioSource.Stop();
             }
+        }
 
-            // Update grabPoint local position
-            // Snap grabPoint and rayPoint to cardinal directions
+        // Cardinal direction snapping
+        if (input.sqrMagnitude > 0.01f)
+        {
+            if (Mathf.Abs(moveX) > Mathf.Abs(moveY))
+                lastDirection = moveX > 0 ? Vector2.right : Vector2.left;
+            else
+                lastDirection = moveY > 0 ? Vector2.up : Vector2.down;
+
             if (lastDirection == Vector2.right)
             {
                 grabPoint.localPosition = new Vector3(1f, 0f, 0f);

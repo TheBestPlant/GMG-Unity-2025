@@ -30,6 +30,14 @@ public class KeypadUIManager : MonoBehaviour
         }
     }
 
+        void Update()
+    {
+        if (isOpen && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Close();
+        }
+    }
+
     public void Open(string code, string doorID)
     {
         currentInput = "";

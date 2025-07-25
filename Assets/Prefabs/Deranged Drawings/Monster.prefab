@@ -48,6 +48,9 @@ GameObject:
   - component: {fileID: 3373722282997209385}
   - component: {fileID: 3057253176400238925}
   - component: {fileID: 7971203341469662045}
+  - component: {fileID: 853477669719578754}
+  - component: {fileID: 2598364385463276388}
+  - component: {fileID: 2994422879516985603}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -217,6 +220,10 @@ MonoBehaviour:
   chaseSpeed: 4
   detectionRange: 2
   fieldOfViewAngle: 360
+  audioSource: {fileID: 0}
+  monsterChaseSound: {fileID: 0}
+  returnToPatrolSound: {fileID: 0}
+  monsterIdleSound: {fileID: 0}
 --- !u!61 &7971203341469662045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -263,6 +270,64 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6875, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &853477669719578754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705452662676270780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 2598364385463276388}
+  - {fileID: 2994422879516985603}
+  useCustomActions: 0
+  customActions:
+    m_PersistentCalls:
+      m_Calls: []
+  happenOnlyOnce: 0
+  filterByTag: 1
+  filterTag: Player
+  frequency: 1
+  eventType: 0
+--- !u!114 &2598364385463276388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705452662676270780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b6d0125816b47ef98ecc18e31894a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToMove: {fileID: 0}
+  newPosition: {x: -9.8, y: 5.7}
+  stopMovements: 1
+  teleportImagePrefab: {fileID: 0}
+  uiCanvas: {fileID: 0}
+--- !u!114 &2994422879516985603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705452662676270780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fee9608fd76eb49aaf4a3a2d96d9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpscareImagePrefab: {fileID: 1080342539120588274, guid: 3e4f108c74f43c949b65244fc9feeb27, type: 3}
+  uiCanvas: {fileID: 0}
+  jumpscareSound: {fileID: 8300000, guid: d7ca62a85100e5c4d9a631535b5276db, type: 3}
+  volume: 2
+  displayTime: 1
 --- !u!1 &7995316816667830687
 GameObject:
   m_ObjectHideFlags: 0

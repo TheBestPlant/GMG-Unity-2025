@@ -8,6 +8,7 @@ public class JumpscareAction : Action
     public Canvas uiCanvas;                 // Reference to Canvas
 
     [Header("Sound")]
+    public AudioSource audioSource;         // Assigned AudioSource in scene
     public AudioClip jumpscareSound;        // Sound to play
     public float volume = 1f;               // Volume of sound
 
@@ -16,7 +17,7 @@ public class JumpscareAction : Action
 
     public override bool ExecuteAction(GameObject dataObject)
     {
-        // Show image
+        // Show jumpscare image
         if (jumpscareImagePrefab != null && uiCanvas != null)
         {
             GameObject imageInstance = GameObject.Instantiate(jumpscareImagePrefab, uiCanvas.transform);
@@ -27,14 +28,16 @@ public class JumpscareAction : Action
             Debug.LogWarning("JumpscareAction: Missing prefab or canvas.");
         }
 
-        // Play sound
-        if (jumpscareSound != null)
+        // Play sound using assigned AudioSource
+        if (audioSource != null && jumpscareSound != null)
         {
-            AudioSource.PlayClipAtPoint(jumpscareSound, Camera.main.transform.position, volume);
+            audioSource.clip = jumpscareSound;
+            audioSource.volume = volume;
+            audioSource.Play();
         }
         else
         {
-            Debug.LogWarning("JumpscareAction: Missing audio clip.");
+            Debug.LogWarning("JumpscareAction: Missing AudioSource or AudioClip.");
         }
 
         return true;
