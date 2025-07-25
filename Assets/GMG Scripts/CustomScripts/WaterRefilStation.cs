@@ -7,7 +7,7 @@ public class WaterRefillStation : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.F))
+        if (playerInside && Input.GetKeyDown(KeyCode.E))
         {
             if (playerThrower != null)
             {

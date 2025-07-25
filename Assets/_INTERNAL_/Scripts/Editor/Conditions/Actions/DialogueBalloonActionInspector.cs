@@ -1,45 +1,97 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
 
-[CanEditMultipleObjects]
-[CustomEditor(typeof(DialogueBalloonAction))]
-public class DialogueBalloonActionInspector : InspectorBase
+[AddComponentMenu("Playground/Actions/Dialogue Balloon")]
+public class DialogueBalloonAction : Action
 {
-	private string explanation = "Use this script to create a dialogue ballon on a character's head.";
-	private string tipMessage = "TIP: Connect another DialogueBalloonAction in the last slot to create a continuous conversation.";
+    [Header("Contents")]
+    public string textToDisplay = "Hey!";
+    public Color backgroundColor = new Color32(113, 132, 146, 255);
+    public Color textColor = Color.white;
 
-	public override void OnInspectorGUI()
-	{
-		GUILayout.Space(10);
-		EditorGUILayout.HelpBox(explanation, MessageType.Info);
+    [Header("Options")]
+    public Transform targetObject;
+    public DisappearMode disappearMode = DisappearMode.ButtonPress;
+    public float timeToDisappear = 2f;
+    public KeyCode keyToPress = KeyCode.Return;
 
-		//Contents
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("textToDisplay"));
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("backgroundColor"));
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("textColor"));
+    [Header("Continue dialogue")]
+    public DialogueBalloonAction followingText;
 
-		//Options
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("targetObject"));
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("disappearMode"));
-		int isUsingKey = serializedObject.FindProperty("disappearMode").intValue;
-		if(isUsingKey == 1)
-		{
-			EditorGUILayout.PropertyField(serializedObject.FindProperty("keyToPress"));
-		}
-		else
-		{
-			EditorGUILayout.PropertyField(serializedObject.FindProperty("timeToDisappear"));
-		}
+    private BalloonScript b;
+    private bool balloonIsActive = false;
 
-		//Continue dialogue
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("followingText"));
+    public override bool ExecuteAction(GameObject other)
+    {
+        if (balloonIsActive)
+        {
+            Debug.Log("Balloon already active. Ignoring additional trigger.");
+            return false;
+        }
 
-		EditorGUILayout.HelpBox(tipMessage, MessageType.Info);
+        DialogueSystem d = GameObject.FindObjectOfType<DialogueSystem>();
+        if (d == null)
+        {
+            Debug.LogWarning("DialogueSystem is missing from the scene! Please add it.");
+            return false;
+        }
 
-		if (GUI.changed)
-		{
-			serializedObject.ApplyModifiedProperties();
-		}
-	}
+        if (d.balloonPrefab == null)
+        {
+            Debug.LogError("DialogueSystem has no balloonPrefab assigned!");
+            return false;
+        }
+
+        b = d.CreateBalloon(
+            textToDisplay,
+            (disappearMode == DisappearMode.ButtonPress),
+            keyToPress,
+            timeToDisappear,
+            backgroundColor,
+            textColor,
+            targetObject
+        );
+
+        if (b == null)
+        {
+            Debug.LogError("Failed to create balloon. Check CreateBalloon method.");
+            return false;
+        }
+
+        b.BalloonDestroyed += OnBalloonDestroyed;
+        balloonIsActive = true;
+        Debug.Log("Balloon successfully created.");
+
+        StartCoroutine(WaitForBallonDestroyed());
+        return true;
+    }
+
+    private IEnumerator WaitForBallonDestroyed()
+    {
+        yield return new WaitUntil(() => !balloonIsActive);
+    }
+
+    private void OnBalloonDestroyed()
+    {
+        Debug.Log("Balloon destroyed.");
+        if (b != null)
+        {
+            b.BalloonDestroyed -= OnBalloonDestroyed;
+        }
+
+        b = null;
+        balloonIsActive = false;
+
+        if (followingText != null)
+        {
+            Debug.Log("Triggering next dialogue...");
+            followingText.ExecuteAction(this.gameObject);
+        }
+    }
+
+    public enum DisappearMode
+    {
+        Time = 0,
+        ButtonPress = 1,
+    }
 }

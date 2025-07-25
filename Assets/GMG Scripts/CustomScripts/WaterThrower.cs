@@ -69,7 +69,7 @@ public class WaterThrower : MonoBehaviour
         }
 
         // Refill
-        else if (Input.GetKeyDown(KeyCode.F))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             if (canRefill)
             {

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: efc1687f6d424446fb68251e306e568c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - balloonPrefab: {fileID: 1000011611653130, guid: e444db66902f44d08a89485896d75827, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
