@@ -2155,7 +2155,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 8400376472176587524, guid: df334480e31e35c409969dba83da880a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2280,17 +2280,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0024072528, y: -0.004813686}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6875, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.51382506, y: 0.96149135}
   m_EdgeRadius: 0
 --- !u!95 &394257334
 Animator:
@@ -84347,6 +84347,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 394257329}
+    - target: {fileID: 3057253176400238925, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
+      propertyPath: detectionRange
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3057253176400238925, guid: 9c6fa4483914f37428ab67a87ef0d412, type: 3}
       propertyPath: fieldOfViewAngle
       value: 360
