@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Hospital.unity
     guid: deadf17d27c9df649845317e56930ae1
+  - enabled: 1
+    path: Assets/End.unity
+    guid: 0c057f40363df144599caaa29ca5809c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0
