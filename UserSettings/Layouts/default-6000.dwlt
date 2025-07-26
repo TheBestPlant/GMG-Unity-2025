@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 725
     height: 578
-  m_MinSize: {x: 725, y: 400}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 725, y: 426}
+  m_MaxSize: {x: 4000, y: 4026}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -377,8 +377,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Build Profiles\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 123
-    y: 274
+    x: 0
+    y: 26
     width: 725
     height: 552
   m_SerializedDataModeController:
@@ -804,8 +804,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 557
+    x: 0
+    y: 494
     width: 1106
     height: 249
   m_SerializedDataModeController:
@@ -849,21 +849,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 205.99994}
     m_SelectedIDs: d8940000
     m_LastClickedID: 38104
-    m_ExpandedIDs: 00000000c0940000c2940000c4940000c6940000c8940000ca940000cc940000ce940000d0940000d2940000d4940000d6940000d89400003e9500007095000000ca9a3b
+    m_ExpandedIDs: 00000000fa940000fc940000fe94000000950000029500000495000006950000089500000a9500000c9500000e950000109500001295000014950000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: CustomScripts
-      m_OriginalName: CustomScripts
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 38260
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 8}
@@ -878,7 +878,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0940000c2940000c4940000c6940000c8940000ca940000cc940000ce940000d0940000d2940000d4940000d6940000d8940000
+    m_ExpandedIDs: 00000000fa940000fc940000fe94000000950000029500000495000006950000089500000a9500000c9500000e950000109500001295000014950000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -957,8 +957,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1115
-    y: 87
+    x: 1108
+    y: 24
     width: 342
     height: 719
   m_SerializedDataModeController:
@@ -1006,8 +1006,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 87
+    x: 0
+    y: 24
     width: 273
     height: 444
   m_SerializedDataModeController:
@@ -1072,8 +1072,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 282
-    y: 87
+    x: 275
+    y: 24
     width: 831
     height: 444
   m_SerializedDataModeController:
